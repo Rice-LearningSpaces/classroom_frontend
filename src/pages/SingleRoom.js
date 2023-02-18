@@ -5,6 +5,28 @@ import Banner from "../components/Banner";
 import StyledHero from "../components/StyledHero";
 import { getRooms } from "../data/actions/roomActions";
 
+
+//import { makeStyles } from '@material-ui/core/styles';
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+
+
+// const useStyles = makeStyles((theme) => ({
+//   root: {
+//     display: 'flex',
+//     flexWrap: 'wrap',
+//     justifyContent: 'space-around',
+//     overflow: 'hidden',
+//     backgroundColor: theme.palette.background.paper,
+//   },
+//   imageList: {
+//     width: 500,
+//     height: 450,
+//   },
+// }));
+// const classes = useStyles();
+
+
 function SingleRoom(props) {
   const [state, setState] = useState({ room: {} });
 
@@ -34,6 +56,9 @@ function SingleRoom(props) {
   }
   const { room } = state;
 
+
+  
+
   return (
     <React.Fragment>
       <StyledHero img={room.images ? room.images[0] : null}>
@@ -43,6 +68,14 @@ function SingleRoom(props) {
           </Link>
         </Banner>
       </StyledHero>
+      {/* TODO change to react scrollable image list https://mui.com/material-ui/react-image-list/*/}
+      <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
+        {room.images.map((item) => (
+          <ImageListItem key={item.img} cols={item.cols || 1}>
+            <img src={item.img} alt={item.title} />
+          </ImageListItem>
+        ))}
+      </ImageList>
       <div className="single-room-images">
         {room.images &&
           room.images.map((img, i) => {
