@@ -114,6 +114,16 @@ h6 {
 .nav-header {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  display: block;
+  text-decoration: none;
+  padding: 1rem 0;
+  color: var(--mainBlack);
+  transition: var(--mainTransition);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: var(--mainSpacing);
 }
 
 .nav-btn {
@@ -133,6 +143,7 @@ h6 {
   overflow: hidden;
   transition: var(--mainTransition);
   list-style-type: none;
+  align-items: center;
 }
 
 .nav-links a {
@@ -143,7 +154,7 @@ h6 {
   transition: var(--mainTransition);
   text-align: center;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 300;
   letter-spacing: var(--mainSpacing);
 }
 

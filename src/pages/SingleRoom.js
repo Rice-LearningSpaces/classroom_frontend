@@ -9,6 +9,7 @@ import { getRooms } from "../data/actions/roomActions";
 //import { makeStyles } from '@material-ui/core/styles';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
+import { display } from "@mui/system";
 
 
 // const useStyles = makeStyles((theme) => ({
@@ -69,19 +70,15 @@ function SingleRoom(props) {
         </Banner>
       </StyledHero>
       {/* TODO change to react scrollable image list https://mui.com/material-ui/react-image-list/*/}
-      <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-        {room.images.map((item) => (
-          <ImageListItem key={item.img} cols={item.cols || 1}>
-            <img src={item.img} alt={item.title} />
-          </ImageListItem>
-        ))}
-      </ImageList>
-      <div className="single-room-images">
+   
+      <ImageList sx = {{display: "flex", width:'100%', height: 450}} row = {1}>
+      {/* <div className="single-room-images"> */}
         {room.images &&
           room.images.map((img, i) => {
             return i === 0 ? null : <img key={i} src={img} alt={room.name} />;
           })}
-      </div>
+      {/* </div> */}
+      </ImageList>
       <div className="single-room-info">
         <article className="desc">
           <h3>details</h3>
