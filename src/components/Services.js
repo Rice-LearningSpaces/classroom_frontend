@@ -1,26 +1,26 @@
 import React from "react";
-import { FaCocktail, FaHiking, FaShuttleVan, FaBeer } from "react-icons/fa";
+import { FaGlobe, FaHiking, FaRegClipboard, FaWindowRestore } from "react-icons/fa";
 import Title from "./Title";
 
 const services = [
   {
-    icon: <FaCocktail />,
-    title: "free cocktails",
+    icon: <FaGlobe />,
+    title: "360 degree photo viewer",
     info: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
   },
   {
     icon: <FaHiking />,
-    title: "endless hiking",
+    title: "campus map viewer",
     info: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
   },
   {
-    icon: <FaShuttleVan />,
-    title: "free shuttle",
+    icon: <FaRegClipboard />,
+    title: "seating chart",
     info: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
   },
   {
-    icon: <FaBeer />,
-    title: "strongest beer",
+    icon: <FaWindowRestore />,
+    title: "inventory",
     info: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
   }
 ];

@@ -8,12 +8,12 @@ function RoomFilter(props) {
     prices: [],
     sizes: [],
     type: "all",
-    price: 0,
+    seats: 0,
     capacity: 1,
     breakfast: false,
     pets: false,
-    minPrice: 0,
-    maxPrice: 0,
+    minSeats: 0,
+    maxSeats: 0,
     minSize: 0,
     maxSize: 0
   });
@@ -28,10 +28,10 @@ function RoomFilter(props) {
     };
     const types = getRoomData(props.rooms, "type");
     const guests = getRoomData(props.rooms, "capacity");
-    const prices = getRoomData(props.rooms, "price");
+    const prices = getRoomData(props.rooms, "seats");
     const sizes = getRoomData(props.rooms, "size");
-    const minPrice = prices.length > 0 ? Math.min(...prices) : 0;
-    const maxPrice = prices.length > 0 ? Math.max(...prices) : 0;
+    const minSeats = prices.length > 0 ? Math.min(...prices) : 0;
+    const maxSeats = prices.length > 0 ? Math.max(...prices) : 0;
     const minSize = sizes.length > 0 ? Math.min(...sizes) : 0;
     const maxSize = sizes.length > 0 ? Math.max(...sizes) : 0;
 
@@ -39,11 +39,11 @@ function RoomFilter(props) {
       ...state,
       types: types,
       guests: guests,
-      minPrice: minPrice,
-      maxPrice: maxPrice,
+      minSeats: minSeats,
+      maxSeats: maxSeats,
       minSize: minSize,
       maxSize: maxSize,
-      price: maxPrice
+      seats: maxSeats
     });
     //eslint-disable-next-line
   }, [props.rooms]);
@@ -107,15 +107,15 @@ function RoomFilter(props) {
 
         {/*room price */}
         <div className="form-group">
-          <label htmlFor="price">room price ${state.price}</label>
+          <label htmlFor="seats">room seats ${state.seats}</label>
           <input
             type="range"
-            name="price"
-            id="price"
-            min={state.minPrice}
-            max={state.maxPrice}
+            name="seats"
+            id="seats"
+            min={state.minSeats}
+            max={state.maxSeats}
             className="form-control"
-            value={state.price}
+            value={state.seats}
             onChange={handleChange}
           />
         </div>

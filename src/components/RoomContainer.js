@@ -29,7 +29,7 @@ function RoomContainer(props) {
 
   const handleChange = ({
     type,
-    price,
+    seats,
     capacity,
     breakfast,
     pets,
@@ -47,8 +47,8 @@ function RoomContainer(props) {
     if (capacity) {
       sortedRooms = sortedRooms.filter(room => room.capacity >= capacity);
     }
-    if (price) {
-      sortedRooms = sortedRooms.filter(room => room.price <= price);
+    if (seats) {
+      sortedRooms = sortedRooms.filter(room => room.seats <= seats);
     }
     if (minSize && maxSize) {
       sortedRooms = sortedRooms.filter(

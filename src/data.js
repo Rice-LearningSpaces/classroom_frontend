@@ -14,6 +14,7 @@ import img9 from "./images/room-9.jpeg";
 import img10 from "./images/room-10.jpeg";
 import img11 from "./images/room-11.jpeg";
 import img12 from "./images/room-12.jpeg";
+import ANH_117 from "./images/ANH_117.jpeg";
 
 export default [
   {
@@ -420,18 +421,20 @@ export default [
       id: "8"
     },
     fields: {
-      name: "Anderson Hall",
+      name: "ANH 117",
       slug: "Anderson-Hall",
       type: "Lecture Hall",
-      seats: "59 - Tiered Auditorium",
-      size: 500,
-      capacity: 2,
-      pets: true,
-      breakfast: true,
+      seats: "59 - Tiered Auditorium", //originally price
+      size: 500, //Lighting
+      capacity: 2, //Windows
+      //TODO: need Writing Surface, Projection Surface, Computers, Flooring
+      pets: true, //Outlets
+      breakfast: true, //Video Conferencing
       featured: true,
+      //TODO: need Accessibility
       description:
         "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
+      extras: [ 
         "Plush pillows and breathable bed linens",
         "Soft, oversized bath towels",
         "Full-sized, pH-balanced toiletries",
@@ -444,7 +447,7 @@ export default [
         {
           fields: {
             file: {
-              url: img8
+              url: ANH_117
             }
           }
         },

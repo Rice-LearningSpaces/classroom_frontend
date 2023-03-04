@@ -63,7 +63,7 @@ function SingleRoom(props) {
   return (
     <React.Fragment>
       <StyledHero img={room.images ? room.images[0] : null}>
-        <Banner title={`${room.name} room`}>
+        <Banner title={`${room.name}`} subtitle = {`${room.slug}`}>
           <Link to="/rooms" className="btn-primary">
             back to rooms
           </Link>
@@ -84,9 +84,10 @@ function SingleRoom(props) {
           <h3>details</h3>
           <p>{room.description ? room.description : null}</p>
         </article>
-        <article className="info">
+        <article className="info"> 
+        {/* TODO: change to buttons to request help and request room */}
           <h3>info</h3>
-          <h6>price : {room.price ? room.price : null}</h6>
+          <h6>Seats : {room.seats ? room.seats : null}</h6>
           <h6>size : {room.size ? room.size : null} SQFT</h6>
           <h6>
             max capacity :{" "}
@@ -101,6 +102,7 @@ function SingleRoom(props) {
         </article>
       </div>
       <div className="room-extras">
+        {/* TODO: map all room parameters here */}
         <h6>extras</h6>
         <ul className="extras">
           {room.extras &&
