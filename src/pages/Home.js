@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import Services from "../components/Services";
 import FeaturedRooms from "../components/FeaturedRooms";
+// import EarthMoonVR from "../index.vr";
 
 function Home() {
   useEffect(() => {
@@ -14,8 +15,8 @@ function Home() {
     <React.Fragment>
       <Hero>
         <Banner
-          title="Luxurious rooms"
-          subtitle="deluxe rooms starting at $299"
+          title="Classroom Search"
+          subtitle="by building"
         >
           <Link to="/rooms" className="btn-primary">
             our rooms
