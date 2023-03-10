@@ -11,7 +11,7 @@ function Room({ room }) {
           alt="single room"
         />
         <div className="price-top">
-          <h6>{room.slug}</h6>
+          <h6>{room.building}</h6>
           {/* <p>per night</p> */}
         </div>
         <Link to={`/rooms/${room.slug}`} className="btn-primary room-link">

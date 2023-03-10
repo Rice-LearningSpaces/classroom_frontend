@@ -10,22 +10,7 @@ import { getRooms } from "../data/actions/roomActions";
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import { display } from "@mui/system";
-
-
-// const useStyles = makeStyles((theme) => ({
-//   root: {
-//     display: 'flex',
-//     flexWrap: 'wrap',
-//     justifyContent: 'space-around',
-//     overflow: 'hidden',
-//     backgroundColor: theme.palette.background.paper,
-//   },
-//   imageList: {
-//     width: 500,
-//     height: 450,
-//   },
-// }));
-// const classes = useStyles();
+import BasicTabs from "./Tabs";
 
 
 function SingleRoom(props) {
@@ -63,13 +48,12 @@ function SingleRoom(props) {
   return (
     <React.Fragment>
       <StyledHero img={room.images ? room.images[0] : null}>
-        <Banner title={`${room.name}`} subtitle = {`${room.slug}`}>
+        <Banner title={`${room.name}`} subtitle = {`${room.building}`}>
           <Link to="/rooms" className="btn-primary">
             back to rooms
           </Link>
         </Banner>
       </StyledHero>
-      {/* TODO change to react scrollable image list https://mui.com/material-ui/react-image-list/*/}
    
       <ImageList sx = {{display: "flex", width:'100%', height: 450}} row = {1}>
       {/* <div className="single-room-images"> */}
@@ -80,37 +64,55 @@ function SingleRoom(props) {
       {/* </div> */}
       </ImageList>
       <div className="single-room-info">
-        <article className="desc">
-          <h3>details</h3>
+
+      <div className="room-props">
+        <h3>Properties</h3>
+       <ul className="extras">
+        {room.extras &&
+          Object.keys(room.extras).map((key, i) => {
+            let value = (room.extras[key] || room.extras[key] == false) ?room.extras[key]:"";
+            if (Array.isArray(value)) {
+              return (
+                <li key={i}>
+                  <span className="key">{key}:</span>
+                  <ul>
+                    {value.map((item, j) => (
+                     
+                        <span key={j} className="value">{item}</span>
+                     
+                    ))}
+                  </ul>
+                </li>
+              );
+            } else {
+              return (
+                <li key={i}>
+                  <span className="key">{key}:</span>
+                  <span className="value">{value}</span>
+                </li>
+              );
+            }
+          })}
+      </ul>
+
+
+      </div>
+      <div className="rm-service"> 
+      {/* TODO: change to buttons to request help and request room */}
+        <h3>Services</h3>
+        <h6>request help</h6>
+        <h6>request room</h6>
+      </div>
+ 
+      </div>
+
+      {/* https://codesandbox.io/s/tzzj28?file=/demo.tsx */}
+      <article className="details">
+          <h3>Technology Instructions</h3>
+          <BasicTabs tabs={room.instructions} />
+          {/* <TabContainer tabData={room.instructions} /> */}
           <p>{room.description ? room.description : null}</p>
         </article>
-        <article className="info"> 
-        {/* TODO: change to buttons to request help and request room */}
-          <h3>info</h3>
-          <h6>Seats : {room.seats ? room.seats : null}</h6>
-          <h6>size : {room.size ? room.size : null} SQFT</h6>
-          <h6>
-            max capacity :{" "}
-            {room.capacity
-              ? room.capacity > 1
-                ? `${room.capacity} people`
-                : room.capacity
-              : null}
-          </h6>
-          <h6>{room.pets ? "pets allowed" : "no pets allowed"}</h6>
-          <h6>{room.breakfast ? "free breakfast included" : null}</h6>
-        </article>
-      </div>
-      <div className="room-extras">
-        {/* TODO: map all room parameters here */}
-        <h6>extras</h6>
-        <ul className="extras">
-          {room.extras &&
-            room.extras.map((item, i) => {
-              return <li key={i}>- {item}</li>;
-            })}
-        </ul>
-      </div>
     </React.Fragment>
   );
 }
@@ -118,7 +120,63 @@ const mapStatesToProps = state => {
   return { rooms: state.rooms };
 };
 
+// function TabPanel({ children, activeTab }) {
+//   return (
+//     <div className="tab-panel">
+//       {children[activeTab]}
+//     </div>
+//   );
+// }
+
+// function Tab({ tabName, isActive, onTabClick }) {
+//   return (
+//     <div
+//       className={`tab ${isActive ? 'active' : ''}`}
+//       onClick={onTabClick}
+//     >
+//       {tabName}
+//     </div>
+//   );
+// }
+
+// function TabContainer({ tabData }) {
+//   const [activeTab, setActiveTab] = useState(0);
+
+//   function handleTabClick(index) {
+//     setActiveTab(index);
+//   }
+
+//   const tabNames = Object.keys(tabData);
+//   const tabContents = Object.values(tabData);
+
+//   console.log(tabNames);
+
+//   return (
+//     <div className="tab-container">
+//       <div className="tab-list">
+//         {tabNames.map((tabName, index) => (
+//           <Tab
+//             key={tabName}
+//             tabName={tabName}
+//             isActive={activeTab === index}
+//             onTabClick={() => handleTabClick(index)}
+//           />
+//         ))}
+//       </div>
+//       <TabPanel activeTab={activeTab}>
+//         {tabContents.map((tabContent,index) => (
+//           <div key={index}>
+//             {tabContent}
+//           </div>
+//         ))}
+//       </TabPanel>
+//     </div>
+//   );
+// }
+
+
 export default connect(
   mapStatesToProps,
+
   { getRooms }
 )(SingleRoom);

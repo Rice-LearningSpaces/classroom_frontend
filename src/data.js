@@ -24,6 +24,7 @@ export default [
     fields: {
       name: "single economy",
       slug: "single-economy",
+      building: "building1",
       type: "single",
       seats: 100,
       size: 200,
@@ -42,6 +43,13 @@ export default [
         "Internet",
         "Comfortable beds"
       ],
+      instructions:{
+        "Room setup":"There are three audio levels that must be taken into consideration when operating room audio.  The computer audio should be at max level.  The software audio should also be adjusted accordingly.  The room audio at the touch-panel can then be adjusted up or down to further calibrate the room audio, this can be done using the “up” and “down” \"hard\" buttons on the right side of the touch-panel.  The \"Advanced Audio Controls\" touch-panel button will allow more specific audio adjustments including the ability to boost the audio output.",
+        "PC":"TThe PC computer can be selected from the source selection device particular to the system being used.  The PC computer has a 15-minute inactivity sleep timer that will activate when the keyboard or mouse are not moved, however the timer is rendered inactive when viewing a powerpoint file in presentation mode or watching a video (youtube, netflix, etc, or media player) in full screen mode.  When the PC computer is selected you may need to \"wiggle\" the mouse or press any key on the keyboard to wake the computer.",
+        "Microphone":"Document Camera",
+        "Document Camera": "something"
+        
+      },
       images: [
         {
           fields: {
@@ -81,6 +89,7 @@ export default [
     fields: {
       name: "single basic",
       slug: "single-basic",
+      building: "building1",
       type: "single",
       seats: 150,
       size: 250,
@@ -99,6 +108,13 @@ export default [
         "Internet",
         "Comfortable beds"
       ],
+      instructions:{
+        "Room setup":"There are three audio levels that must be taken into consideration when operating room audio.  The computer audio should be at max level.  The software audio should also be adjusted accordingly.  The room audio at the touch-panel can then be adjusted up or down to further calibrate the room audio, this can be done using the “up” and “down” \"hard\" buttons on the right side of the touch-panel.  The \"Advanced Audio Controls\" touch-panel button will allow more specific audio adjustments including the ability to boost the audio output.",
+        "PC":"TThe PC computer can be selected from the source selection device particular to the system being used.  The PC computer has a 15-minute inactivity sleep timer that will activate when the keyboard or mouse are not moved, however the timer is rendered inactive when viewing a powerpoint file in presentation mode or watching a video (youtube, netflix, etc, or media player) in full screen mode.  When the PC computer is selected you may need to \"wiggle\" the mouse or press any key on the keyboard to wake the computer.",
+        "Microphone":"Document Camera",
+        "Document Camera": "something"
+        
+      },
       images: [
         {
           fields: {
@@ -138,6 +154,7 @@ export default [
     fields: {
       name: "single standard",
       slug: "single standard",
+      building: "building1",
       type: "single",
       seats: 250,
       size: 300,
@@ -156,6 +173,13 @@ export default [
         "Internet",
         "Comfortable beds"
       ],
+      instructions:{
+        "Room setup":"There are three audio levels that must be taken into consideration when operating room audio.  The computer audio should be at max level.  The software audio should also be adjusted accordingly.  The room audio at the touch-panel can then be adjusted up or down to further calibrate the room audio, this can be done using the “up” and “down” \"hard\" buttons on the right side of the touch-panel.  The \"Advanced Audio Controls\" touch-panel button will allow more specific audio adjustments including the ability to boost the audio output.",
+        "PC":"TThe PC computer can be selected from the source selection device particular to the system being used.  The PC computer has a 15-minute inactivity sleep timer that will activate when the keyboard or mouse are not moved, however the timer is rendered inactive when viewing a powerpoint file in presentation mode or watching a video (youtube, netflix, etc, or media player) in full screen mode.  When the PC computer is selected you may need to \"wiggle\" the mouse or press any key on the keyboard to wake the computer.",
+        "Microphone":"Document Camera",
+        "Document Camera": "something"
+        
+      },
       images: [
         {
           fields: {
@@ -195,6 +219,7 @@ export default [
     fields: {
       name: "single deluxe",
       slug: "single-deluxe",
+      building: "building1",
       type: "single",
       seats: 300,
       size: 400,
@@ -213,6 +238,13 @@ export default [
         "Internet",
         "Comfortable beds"
       ],
+      instructions:{
+        "Room setup":"There are three audio levels that must be taken into consideration when operating room audio.  The computer audio should be at max level.  The software audio should also be adjusted accordingly.  The room audio at the touch-panel can then be adjusted up or down to further calibrate the room audio, this can be done using the “up” and “down” \"hard\" buttons on the right side of the touch-panel.  The \"Advanced Audio Controls\" touch-panel button will allow more specific audio adjustments including the ability to boost the audio output.",
+        "PC":"TThe PC computer can be selected from the source selection device particular to the system being used.  The PC computer has a 15-minute inactivity sleep timer that will activate when the keyboard or mouse are not moved, however the timer is rendered inactive when viewing a powerpoint file in presentation mode or watching a video (youtube, netflix, etc, or media player) in full screen mode.  When the PC computer is selected you may need to \"wiggle\" the mouse or press any key on the keyboard to wake the computer.",
+        "Microphone":"Document Camera",
+        "Document Camera": "something"
+        
+      },
       images: [
         {
           fields: {
@@ -252,6 +284,7 @@ export default [
     fields: {
       name: "double economy",
       slug: "double-economy",
+      building: "building1",
       type: "double",
       seats: 200,
       size: 300,
@@ -270,6 +303,13 @@ export default [
         "Internet",
         "Comfortable beds"
       ],
+      instructions:{
+        "Room setup":"There are three audio levels that must be taken into consideration when operating room audio.  The computer audio should be at max level.  The software audio should also be adjusted accordingly.  The room audio at the touch-panel can then be adjusted up or down to further calibrate the room audio, this can be done using the “up” and “down” \"hard\" buttons on the right side of the touch-panel.  The \"Advanced Audio Controls\" touch-panel button will allow more specific audio adjustments including the ability to boost the audio output.",
+        "PC":"TThe PC computer can be selected from the source selection device particular to the system being used.  The PC computer has a 15-minute inactivity sleep timer that will activate when the keyboard or mouse are not moved, however the timer is rendered inactive when viewing a powerpoint file in presentation mode or watching a video (youtube, netflix, etc, or media player) in full screen mode.  When the PC computer is selected you may need to \"wiggle\" the mouse or press any key on the keyboard to wake the computer.",
+        "Microphone":"Document Camera",
+        "Document Camera": "something"
+        
+      },
       images: [
         {
           fields: {
@@ -309,6 +349,7 @@ export default [
     fields: {
       name: "double basic",
       slug: "double-basic",
+      building: "building1",
       type: "double",
       seats: 250,
       size: 350,
@@ -327,6 +368,13 @@ export default [
         "Internet",
         "Comfortable beds"
       ],
+      instructions:{
+        "Room setup":"There are three audio levels that must be taken into consideration when operating room audio.  The computer audio should be at max level.  The software audio should also be adjusted accordingly.  The room audio at the touch-panel can then be adjusted up or down to further calibrate the room audio, this can be done using the “up” and “down” \"hard\" buttons on the right side of the touch-panel.  The \"Advanced Audio Controls\" touch-panel button will allow more specific audio adjustments including the ability to boost the audio output.",
+        "PC":"TThe PC computer can be selected from the source selection device particular to the system being used.  The PC computer has a 15-minute inactivity sleep timer that will activate when the keyboard or mouse are not moved, however the timer is rendered inactive when viewing a powerpoint file in presentation mode or watching a video (youtube, netflix, etc, or media player) in full screen mode.  When the PC computer is selected you may need to \"wiggle\" the mouse or press any key on the keyboard to wake the computer.",
+        "Microphone":"Document Camera",
+        "Document Camera": "something"
+        
+      },
       images: [
         {
           fields: {
@@ -366,6 +414,7 @@ export default [
     fields: {
       name: "double standard",
       slug: "double-standard",
+      building: "building1",
       type: "double",
       seats: 300,
       size: 400,
@@ -384,6 +433,13 @@ export default [
         "Internet",
         "Comfortable beds"
       ],
+      instructions:{
+        "Room setup":"There are three audio levels that must be taken into consideration when operating room audio.  The computer audio should be at max level.  The software audio should also be adjusted accordingly.  The room audio at the touch-panel can then be adjusted up or down to further calibrate the room audio, this can be done using the “up” and “down” \"hard\" buttons on the right side of the touch-panel.  The \"Advanced Audio Controls\" touch-panel button will allow more specific audio adjustments including the ability to boost the audio output.",
+        "PC":"TThe PC computer can be selected from the source selection device particular to the system being used.  The PC computer has a 15-minute inactivity sleep timer that will activate when the keyboard or mouse are not moved, however the timer is rendered inactive when viewing a powerpoint file in presentation mode or watching a video (youtube, netflix, etc, or media player) in full screen mode.  When the PC computer is selected you may need to \"wiggle\" the mouse or press any key on the keyboard to wake the computer.",
+        "Microphone":"Document Camera",
+        "Document Camera": "something"
+        
+      },
       images: [
         {
           fields: {
@@ -418,12 +474,14 @@ export default [
   },
   {
     sys: {
-      id: "8"
+      id: "8" // id for each room
     },
     fields: {
       name: "ANH 117",
-      slug: "Anderson-Hall",
+      slug: "anh117", // I will create another field building:"Anderson-Hall" and change slug to "ANH-117"
+      building: "Anderson-Hall",
       type: "Lecture Hall",
+
       seats: "59 - Tiered Auditorium", //originally price
       size: 500, //Lighting
       capacity: 2, //Windows
@@ -433,17 +491,36 @@ export default [
       featured: true,
       //TODO: need Accessibility
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [ 
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
-      images: [
+        "replace with description of the room or we may not need it", 
+      extras:{ //for all attributes of the room 
+        type: "Lecture Hall",
+        seats: "59 - Tiered Auditorium", 
+        Lighting: ["Fluorescent",
+          "Incandescent",
+          "Zoned",
+          "Blackout"],
+        Windows: "Windows with Blinds/Shades",
+        'Writing Surface': "Whiteboard 4' x 14'",
+        "Projection Surface": "Retractable (motorized) 8' x 9'",
+        Computers: ["1 PCs",
+          "1 Laptop VGA Ports",
+          "1 Laptop HDMI Ports"],
+        Outlets: "No",
+        Video_Conferencing: "No",
+        Accessibility:  false,
+        Flooring: "Hard",
+        Writing_Surface: "Whiteboard 4' x 14'",
+      },
+
+      instructions:{
+        "Room setup":"There are three audio levels that must be taken into consideration when operating room audio.  The computer audio should be at max level.  The software audio should also be adjusted accordingly.  The room audio at the touch-panel can then be adjusted up or down to further calibrate the room audio, this can be done using the “up” and “down” \"hard\" buttons on the right side of the touch-panel.  The \"Advanced Audio Controls\" touch-panel button will allow more specific audio adjustments including the ability to boost the audio output.",
+        "PC":"TThe PC computer can be selected from the source selection device particular to the system being used.  The PC computer has a 15-minute inactivity sleep timer that will activate when the keyboard or mouse are not moved, however the timer is rendered inactive when viewing a powerpoint file in presentation mode or watching a video (youtube, netflix, etc, or media player) in full screen mode.  When the PC computer is selected you may need to \"wiggle\" the mouse or press any key on the keyboard to wake the computer.",
+        "Microphone":"Document Camera",
+        "Document Camera": "something"
+        
+      },
+
+      images: [ //the first image is the large image for the room and the ones that follow are scrollables
         {
           fields: {
             file: {
@@ -455,6 +532,13 @@ export default [
           fields: {
             file: {
               url: room2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room3
             }
           }
         },
@@ -482,6 +566,7 @@ export default [
     fields: {
       name: "family economy",
       slug: "family-economy",
+      building: "Anderson-Hall",
       type: "family",
       seats: 300,
       size: 500,
@@ -500,6 +585,13 @@ export default [
         "Internet",
         "Comfortable beds"
       ],
+      instructions:{
+        "Room setup":"There are three audio levels that must be taken into consideration when operating room audio.  The computer audio should be at max level.  The software audio should also be adjusted accordingly.  The room audio at the touch-panel can then be adjusted up or down to further calibrate the room audio, this can be done using the “up” and “down” \"hard\" buttons on the right side of the touch-panel.  The \"Advanced Audio Controls\" touch-panel button will allow more specific audio adjustments including the ability to boost the audio output.",
+        "PC":"TThe PC computer can be selected from the source selection device particular to the system being used.  The PC computer has a 15-minute inactivity sleep timer that will activate when the keyboard or mouse are not moved, however the timer is rendered inactive when viewing a powerpoint file in presentation mode or watching a video (youtube, netflix, etc, or media player) in full screen mode.  When the PC computer is selected you may need to \"wiggle\" the mouse or press any key on the keyboard to wake the computer.",
+        "Microphone":"Document Camera",
+        "Document Camera": "something"
+        
+      },
       images: [
         {
           fields: {
@@ -539,6 +631,7 @@ export default [
     fields: {
       name: "family basic",
       slug: "family-basic",
+      building: 'Anderson-Hall',
       type: "family",
       seats: 350,
       size: 550,
@@ -557,6 +650,13 @@ export default [
         "Internet",
         "Comfortable beds"
       ],
+      instructions:{
+        "Room setup":"There are three audio levels that must be taken into consideration when operating room audio.  The computer audio should be at max level.  The software audio should also be adjusted accordingly.  The room audio at the touch-panel can then be adjusted up or down to further calibrate the room audio, this can be done using the “up” and “down” \"hard\" buttons on the right side of the touch-panel.  The \"Advanced Audio Controls\" touch-panel button will allow more specific audio adjustments including the ability to boost the audio output.",
+        "PC":"TThe PC computer can be selected from the source selection device particular to the system being used.  The PC computer has a 15-minute inactivity sleep timer that will activate when the keyboard or mouse are not moved, however the timer is rendered inactive when viewing a powerpoint file in presentation mode or watching a video (youtube, netflix, etc, or media player) in full screen mode.  When the PC computer is selected you may need to \"wiggle\" the mouse or press any key on the keyboard to wake the computer.",
+        "Microphone":"Document Camera",
+        "Document Camera": "something"
+        
+      },
       images: [
         {
           fields: {
@@ -596,6 +696,7 @@ export default [
     fields: {
       name: "family standard",
       slug: "family-standard",
+      building: "Anderson-Hall",
       type: "family",
       seats: 400,
       size: 600,
@@ -614,6 +715,13 @@ export default [
         "Internet",
         "Comfortable beds"
       ],
+      instructions:{
+        "Room setup":"There are three audio levels that must be taken into consideration when operating room audio.  The computer audio should be at max level.  The software audio should also be adjusted accordingly.  The room audio at the touch-panel can then be adjusted up or down to further calibrate the room audio, this can be done using the “up” and “down” \"hard\" buttons on the right side of the touch-panel.  The \"Advanced Audio Controls\" touch-panel button will allow more specific audio adjustments including the ability to boost the audio output.",
+        "PC":"TThe PC computer can be selected from the source selection device particular to the system being used.  The PC computer has a 15-minute inactivity sleep timer that will activate when the keyboard or mouse are not moved, however the timer is rendered inactive when viewing a powerpoint file in presentation mode or watching a video (youtube, netflix, etc, or media player) in full screen mode.  When the PC computer is selected you may need to \"wiggle\" the mouse or press any key on the keyboard to wake the computer.",
+        "Microphone":"Document Camera",
+        "Document Camera": "something"
+        
+      },
       images: [
         {
           fields: {
@@ -653,6 +761,7 @@ export default [
     fields: {
       name: "family deluxe",
       slug: "family-deluxe",
+      building: "Anderson-Hall",
       type: "family",
       seats: 500,
       size: 700,
@@ -671,6 +780,13 @@ export default [
         "Internet",
         "Comfortable beds"
       ],
+      instructions:{
+        "Room setup":"There are three audio levels that must be taken into consideration when operating room audio.  The computer audio should be at max level.  The software audio should also be adjusted accordingly.  The room audio at the touch-panel can then be adjusted up or down to further calibrate the room audio, this can be done using the “up” and “down” \"hard\" buttons on the right side of the touch-panel.  The \"Advanced Audio Controls\" touch-panel button will allow more specific audio adjustments including the ability to boost the audio output.",
+        "PC":"TThe PC computer can be selected from the source selection device particular to the system being used.  The PC computer has a 15-minute inactivity sleep timer that will activate when the keyboard or mouse are not moved, however the timer is rendered inactive when viewing a powerpoint file in presentation mode or watching a video (youtube, netflix, etc, or media player) in full screen mode.  When the PC computer is selected you may need to \"wiggle\" the mouse or press any key on the keyboard to wake the computer.",
+        "Microphone":"Document Camera",
+        "Document Camera": "something"
+        
+      },
       images: [
         {
           fields: {
@@ -710,6 +826,7 @@ export default [
     fields: {
       name: "presidential",
       slug: "presidential-room",
+      building: "Anderson-Hall",
       type: "presidential",
       seats: 600,
       size: 1000,
@@ -728,6 +845,13 @@ export default [
         "Internet",
         "Comfortable beds"
       ],
+      instructions:{
+        "Room setup":"There are three audio levels that must be taken into consideration when operating room audio.  The computer audio should be at max level.  The software audio should also be adjusted accordingly.  The room audio at the touch-panel can then be adjusted up or down to further calibrate the room audio, this can be done using the “up” and “down” \"hard\" buttons on the right side of the touch-panel.  The \"Advanced Audio Controls\" touch-panel button will allow more specific audio adjustments including the ability to boost the audio output.",
+        "PC":"TThe PC computer can be selected from the source selection device particular to the system being used.  The PC computer has a 15-minute inactivity sleep timer that will activate when the keyboard or mouse are not moved, however the timer is rendered inactive when viewing a powerpoint file in presentation mode or watching a video (youtube, netflix, etc, or media player) in full screen mode.  When the PC computer is selected you may need to \"wiggle\" the mouse or press any key on the keyboard to wake the computer.",
+        "Microphone":"Document Camera",
+        "Document Camera": "something"
+        
+      },
       images: [
         {
           fields: {
