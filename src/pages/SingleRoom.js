@@ -68,9 +68,15 @@ function SingleRoom(props) {
       <div className="room-props">
         <h3>Properties</h3>
        <ul className="extras">
-        {room.extras &&
-          Object.keys(room.extras).map((key, i) => {
-            let value = (room.extras[key] || room.extras[key] == false) ?room.extras[key]:"";
+        {room &&
+          Object.keys(room).map((key, i) => {
+            // don't display id and images on the property list
+            if (key === "id" || key === "images") {
+              return null;
+            }
+           
+            console.log(key, room[key]);
+            let value = (room[key]) ?room[key]:"";
             if (Array.isArray(value)) {
               return (
                 <li key={i}>
@@ -84,6 +90,8 @@ function SingleRoom(props) {
                   </ul>
                 </li>
               );
+            } else if (typeof value === 'object' && !Array.isArray(value)) {
+              return null;
             } else {
               return (
                 <li key={i}>
@@ -92,6 +100,7 @@ function SingleRoom(props) {
                 </li>
               );
             }
+            
           })}
       </ul>
 

@@ -5,11 +5,15 @@ function RoomFilter(props) {
   const [state, setState] = useState({
     types: [],
     guests: [],
-    prices: [],
+    extras: [],
+    capacity: [],
     sizes: [],
     type: "all",
+    system: "all",
+    name:"all",
     seats: 0,
     capacity: 1,
+    systems: [],
     breakfast: false,
     pets: false,
     minSeats: 0,
@@ -21,23 +25,28 @@ function RoomFilter(props) {
   useEffect(() => {
     const getRoomData = (rooms, d_type) => {
       const data = rooms.map(item => {
-        return item[d_type];
+          return item[d_type];
+       
       });
       const uinque_data = [...new Set(data)];
       return uinque_data;
     };
     const types = getRoomData(props.rooms, "type");
+    //const extras = getRoomData(props.rooms, "extras"); TODO: delete when works
+    const systems = getRoomData(props.rooms, "system");
+    const name = getRoomData(props.rooms, "name");
     const guests = getRoomData(props.rooms, "capacity");
-    const prices = getRoomData(props.rooms, "seats");
+    const capacity = getRoomData(props.rooms, "capacity");
     const sizes = getRoomData(props.rooms, "size");
-    const minSeats = prices.length > 0 ? Math.min(...prices) : 0;
-    const maxSeats = prices.length > 0 ? Math.max(...prices) : 0;
+    const minSeats = capacity.length > 0 ? Math.min(...capacity) : 0;
+    const maxSeats = capacity.length > 0 ? Math.max(...capacity) : 0;
     const minSize = sizes.length > 0 ? Math.min(...sizes) : 0;
     const maxSize = sizes.length > 0 ? Math.max(...sizes) : 0;
 
     setState({
       ...state,
       types: types,
+      systems: systems,
       guests: guests,
       minSeats: minSeats,
       maxSeats: maxSeats,
@@ -65,6 +74,39 @@ function RoomFilter(props) {
     <section className="filter-container">
       <Title title="search rooms" />
       <form className="filter-form">
+         {/*room name */}
+         <div className="form-group">
+          <label htmlFor="name">Search:</label>
+          <input
+              type="text"
+              name="name"
+              id="name"
+              value={state.name}
+              //className="capacity"
+              onChange={handleChange}
+            />
+        </div>
+        {/*end of room name */}
+        {/* select type */}
+        <div className="form-group">
+          <label htmlFor="system_type">system type</label>
+          <select
+            name="system"
+            id="system_type"
+            className="form-control"
+            onChange={handleChange}
+          >
+            <option value="all">All System Types</option>
+            {state.systems.map((type, i) => {
+              return (
+                <option key={i} value={type}>
+                  {type}
+                </option>
+              );
+            })}
+          </select>
+        </div>
+        {/* end select type */}
         {/* select type */}
         <div className="form-group">
           <label htmlFor="type">room type</label>
@@ -107,7 +149,8 @@ function RoomFilter(props) {
 
         {/*room price */}
         <div className="form-group">
-          <label htmlFor="seats">room seats ${state.seats}</label>
+          <label htmlFor="seats">Students per computer: {state.seats}</label>
+          {/* todo: change to extras.computer count */}
           <input
             type="range"
             name="seats"
@@ -122,21 +165,22 @@ function RoomFilter(props) {
         {/*end of room price */}
         {/*room size */}
         <div className="form-group">
-          <label htmlFor="size">room size</label>
+          <label htmlFor="size">capacity</label> 
+          {/* TODO: change to capacity */}
           <div className="size-inputs">
             <input
               type="number"
-              name="minSize"
+              name="minSeats"
               id="size"
-              value={state.minSize}
+              value={state.minSeats}
               className="size-input"
               onChange={handleChange}
             />
             <input
               type="number"
-              name="maxSize"
+              name="maxSeats"
               id="size"
-              value={state.maxSize}
+              value={state.maxSeats}
               className="size-input"
               onChange={handleChange}
             />

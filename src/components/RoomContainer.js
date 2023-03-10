@@ -12,7 +12,7 @@ function RoomContainer(props) {
   });
 
   useEffect(() => {
-    document.title = "Beach Resort || Rooms";
+    document.title = "Rice University || EdTech";
     props.getRooms();
     // eslint-disable-next-line
   }, []);
@@ -29,12 +29,14 @@ function RoomContainer(props) {
 
   const handleChange = ({
     type,
+    name,
+    system,
     seats,
     capacity,
     breakfast,
     pets,
-    minSize,
-    maxSize
+    minSeats,
+    maxSeats
   }) => {
     let sortedRooms = props.rooms;
     if (type) {
@@ -44,15 +46,27 @@ function RoomContainer(props) {
         sortedRooms = sortedRooms.filter(room => room.type === type);
       }
     }
-    if (capacity) {
-      sortedRooms = sortedRooms.filter(room => room.capacity >= capacity);
+    if (system) {
+      sortedRooms = sortedRooms.filter(room => room.system === system);
     }
+    if (name) {
+      if (name === "all") {
+        sortedRooms = props.rooms;
+      } else {
+        console.log(name);
+        sortedRooms = sortedRooms.filter(room => room.name === name);
+      }
+    }
+    // if (capacity) {
+    //   console.log(capacity);
+    //   sortedRooms = sortedRooms.filter(room => room.capacity >= capacity);
+    // }
     if (seats) {
       sortedRooms = sortedRooms.filter(room => room.seats <= seats);
     }
-    if (minSize && maxSize) {
+    if (minSeats && maxSeats) {
       sortedRooms = sortedRooms.filter(
-        room => room.size >= minSize && room.size <= maxSize
+        room => room.capacity >= minSeats && room.capacity <= maxSeats
       );
     }
     if (pets) {

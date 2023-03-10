@@ -464,7 +464,7 @@ h6 {
   margin: 1rem 0;
 }
 
-.extras .key {
+.extras .key { /* TODO: style keys and values */
   font-weight: bold;
 }
 .extras .value {
@@ -593,7 +593,7 @@ h6 {
 }
 
 .single-extra label {
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 0.8rem;
   margin-left: 0.5rem;
 }
