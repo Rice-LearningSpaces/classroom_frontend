@@ -14,11 +14,6 @@ const services = [
     info: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
   },
   {
-    icon: <FaRegClipboard />,
-    title: "seating chart",
-    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
-  },
-  {
     icon: <FaWindowRestore />,
     title: "inventory",
     info: "Lorem ipsum dolor sit amet consectetur adipisicing elit."

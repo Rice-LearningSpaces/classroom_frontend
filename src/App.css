@@ -454,12 +454,13 @@ h6 {
 .single-room-info {
   width: 80vw;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns:  repeat(auto-fit, minmax(350px, 1fr));
   margin: 2rem auto;
 }
 
 /* .details, */
 .room-props,
+.seating_chart,
 .rm-service {
   margin: 1rem 0;
 }
@@ -485,6 +486,7 @@ h6 {
 /* .room-props */
 .details,
 .room-props,
+.seating_chart,
 .rm-service {
   width: 80vw;
   margin: 0 auto 3rem auto;
@@ -497,21 +499,21 @@ h6 {
 
 .extras {
   list-style-type: none;
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); */
   grid-column-gap: 2rem;
-  grid-row-gap: 1rem; */
+  grid-row-gap: 1rem;
 }
 
 @media screen and (min-width: 992px) {
 
-  .single-room-images,
+  /* .single-room-images,
   .single-room-info,
   .room-props {
     width: 95vw;
     max-width: 1170px;
-  }
-
+  } */
+  .room-props
   .single-room-info {
     display: grid;
     grid-template-columns: 1fr;

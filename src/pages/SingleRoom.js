@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef} from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import Banner from "../components/Banner";
@@ -11,13 +11,36 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import { display } from "@mui/system";
 import BasicTabs from "./Tabs";
+import Drawer from '@mui/material/Drawer';
+import Button from '@mui/material/Button';
+// import FlightClassIcon from '@mui/icons-material/FlightClass';
 
+// const useStyles = (pheight)=> makeStyles({
+//   drawer: {
+//     position: "relative",
+//     marginLeft: "auto",
+//     width: 200,
+//     "& .MuiBackdrop-root": {
+//       display: "none"
+//     },
+//     "& .MuiDrawer-paper": {
+//       width: 200,
+//       position: "absolute",
+//         height: pheight,
+//       transition: "none !important"
+//     }
+//   }
+// });
 
 function SingleRoom(props) {
   const [state, setState] = useState({ room: {} });
+  const [toggle, setToggle] = useState(false);
+  const containerRef = useRef(null);
+
+
 
   useEffect(() => {
-    document.title = "Beach Resort || Room Details";
+    document.title = "Rice University || Edtech";
     props.getRooms();
     //eslint-disable-next-line
   }, []);
@@ -41,6 +64,24 @@ function SingleRoom(props) {
     );
   }
   const { room } = state;
+
+  
+
+
+  const toggleDrawer =
+    (open) =>
+    (event) => {
+      if (
+        event.type === 'keydown' &&
+        ((event).key === 'Tab' ||
+          (event).key === 'Shift')
+      ) {
+        return;
+      }
+
+      setToggle(open);
+    };
+
 
 
   
@@ -67,50 +108,99 @@ function SingleRoom(props) {
 
       <div className="room-props">
         <h3>Properties</h3>
-       <ul className="extras">
-        {room &&
-          Object.keys(room).map((key, i) => {
-            // don't display id and images on the property list
-            if (key === "id" || key === "images") {
-              return null;
-            }
-           
-            console.log(key, room[key]);
-            let value = (room[key]) ?room[key]:"";
-            if (Array.isArray(value)) {
-              return (
-                <li key={i}>
-                  <span className="key">{key}:</span>
-                  <ul>
-                    {value.map((item, j) => (
-                     
-                        <span key={j} className="value">{item}</span>
-                     
-                    ))}
-                  </ul>
-                </li>
-              );
-            } else if (typeof value === 'object' && !Array.isArray(value)) {
-              return null;
-            } else {
-              return (
-                <li key={i}>
-                  <span className="key">{key}:</span>
-                  <span className="value">{value}</span>
-                </li>
-              );
-            }
+        <ul className="extras">
+          {room &&
+            Object.keys(room).map((key, i) => {
+              // don't display id and images on the property list
+              if (key === "id" || key === "images" || key === "seating_chart") {
+                return null;
+              }
+              let value = (room[key]) ?room[key]:"";
+              if (Array.isArray(value)) {
+                return (
+                  <li key={i}>
+                    <span className="key">{key}:</span>
+                    <ul>
+                      {value.map((item, j) => (
+                      
+                          <span key={j} className="value">{item}</span>
+                      
+                      ))}
+                    </ul>
+                  </li>
+                );
+              } else if (typeof value === 'object' && !Array.isArray(value)) {
+                return null;
+              } else {
+                return (
+                  <li key={i}>
+                    <span className="key">{key}:</span>
+                    <span className="value">{value}</span>
+                  </li>
+                );
+              }
+              
+            })}
+        </ul>
+      </div>
+      <div className="seating-chart" ref={containerRef}>
+        {/* <h3>Seating Chart</h3> */}
+        {/* <img src={room.seating_chart} alt={room.name} />; */}
+        <React.Fragment key={"top"} >
+          <Button onClick={toggleDrawer(true)} 
+          variant="outlined" 
+         
+          sx = {{fontSize: "1.5em",
+            lineHeight: "1",
+            fontWeight: "bold",
+            fontFamily: 'Verdana',
+            borderColor: "black",
+            color:'#000000',
+            mb: "1em"}}
+          // startIcon={<FlightClassIcon />}>
+          >
+         Seating Chart </Button>
+          <Drawer
+            onClose={toggleDrawer(false)}
+            onOpen={toggleDrawer(true)}
+            anchor={"top"}
+            open={toggle}
             
-          })}
-      </ul>
-
-
+            
+          >
+            {<img src={room.seating_chart} alt={room.name} />}
+          </Drawer>
+        </React.Fragment>
       </div>
       <div className="rm-service"> 
       {/* TODO: change to buttons to request help and request room */}
         <h3>Services</h3>
-        <h6>request help</h6>
-        <h6>request room</h6>
+        <h6>
+        <Button onClick={()=>{}} 
+          variant="outlined" 
+          sx = {{fontSize: "1em",
+            lineHeight: "1",
+            fontFamily: 'Verdana',
+            color:'#000000',
+            fontWeight: "bold",
+       }}
+          >
+         request help </Button>
+        </h6>
+        <h6>
+        <Button onClick={()=>{}} 
+          variant="outlined" 
+          sx = {{fontSize: "1em",
+            lineHeight: "1",
+            fontFamily: 'Verdana',
+            color:'#000000',
+            fontWeight: "bold",
+          }}
+          >
+         request room </Button>
+        </h6>
+        
+        
       </div>
  
       </div>
@@ -121,7 +211,7 @@ function SingleRoom(props) {
           <BasicTabs tabs={room.instructions} />
           {/* <TabContainer tabData={room.instructions} /> */}
           <p>{room.description ? room.description : null}</p>
-        </article>
+      </article>
     </React.Fragment>
   );
 }
