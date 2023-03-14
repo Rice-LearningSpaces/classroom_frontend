@@ -168,7 +168,7 @@ function SingleRoom(props) {
             
             
           >
-            {<img src={room.seating_chart} alt={room.name} />}
+            {<img src={room.seating_chart} className = "seating-chart-img" alt={room.name} />}
           </Drawer>
         </React.Fragment>
       </div>

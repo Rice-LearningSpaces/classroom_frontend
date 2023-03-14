@@ -465,6 +465,10 @@ h6 {
   margin: 1rem 0;
 }
 
+.seating-chart-img {
+  max-height: 75vh;
+}
+
 .extras .key { /* TODO: style keys and values */
   font-weight: bold;
 }

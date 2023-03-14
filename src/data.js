@@ -9,12 +9,12 @@ import img4 from "./images/room-4.jpeg";
 import img5 from "./images/room-5.jpeg";
 import img6 from "./images/room-6.jpeg";
 import img7 from "./images/room-7.jpeg";
-import img8 from "./images/room-8.jpeg";
 import img9 from "./images/room-9.jpeg";
 import img10 from "./images/room-10.jpeg";
 import img11 from "./images/room-11.jpeg";
 import img12 from "./images/room-12.jpeg";
 import ANH_117 from "./images/ANH_117.jpeg";
+import seating from "./images/seating.png";
 
 export default [
   {
@@ -41,7 +41,7 @@ export default [
       system: "Podium",
       windows: "Windows with Blinds/Shades",
       writing_surface: "Whiteboard 4' x 14'",
-      seating_chart: img1,
+      seating_chart: seating,
       projection_surface: "Retractable (motorized) 8' x 9'",
       computers: ["1 PCs",
         "1 Laptop VGA Ports",
@@ -52,7 +52,7 @@ export default [
       screen_exclusive: true,
       flooring: "Hard",
       writing_surface: "Whiteboard 4' x 14'",
-      seating_chart: img1,
+      seating_chart: seating,
       instructions:{
         "Room setup":"There are three audio levels that must be taken into consideration when operating room audio.  The computer audio should be at max level.  The software audio should also be adjusted accordingly.  The room audio at the touch-panel can then be adjusted up or down to further calibrate the room audio, this can be done using the “up” and “down” \"hard\" buttons on the right side of the touch-panel.  The \"Advanced Audio Controls\" touch-panel button will allow more specific audio adjustments including the ability to boost the audio output.",
         "PC":"TThe PC computer can be selected from the source selection device particular to the system being used.  The PC computer has a 15-minute inactivity sleep timer that will activate when the keyboard or mouse are not moved, however the timer is rendered inactive when viewing a powerpoint file in presentation mode or watching a video (youtube, netflix, etc, or media player) in full screen mode.  When the PC computer is selected you may need to \"wiggle\" the mouse or press any key on the keyboard to wake the computer.",
@@ -116,7 +116,7 @@ export default [
       system: "Podium",
       windows: "Windows with Blinds/Shades",
       writing_surface: "Whiteboard 4' x 14'",
-      seating_chart: img1,
+      seating_chart: seating,
       projection_surface: "Retractable (motorized) 8' x 9'",
       computers: ["1 PCs",
         "1 Laptop VGA Ports",
@@ -127,7 +127,7 @@ export default [
       screen_exclusive: true,
       flooring: "Hard",
       writing_surface: "Whiteboard 4' x 14'",
-      seating_chart: img1,
+      seating_chart: seating,
         
 
       instructions:{
@@ -193,7 +193,7 @@ export default [
       system: "Podium",
       windows: "Windows with Blinds/Shades",
       writing_surface: "Whiteboard 4' x 14'",
-      seating_chart: img1,
+      seating_chart: seating,
       projection_surface: "Retractable (motorized) 8' x 9'",
       computers: ["1 PCs",
         "1 Laptop VGA Ports",
@@ -204,7 +204,7 @@ export default [
       screen_exclusive: true,
       flooring: "Hard",
       writing_surface: "Whiteboard 4' x 14'",
-      seating_chart: img1,
+      seating_chart: seating,
         
 
       instructions:{
@@ -270,7 +270,7 @@ export default [
       system: "Podium",
       windows: "Windows with Blinds/Shades",
       writing_surface: "Whiteboard 4' x 14'",
-      seating_chart: img1,
+      seating_chart: seating,
       projection_surface: "Retractable (motorized) 8' x 9'",
       computers: ["1 PCs",
         "1 Laptop VGA Ports",
@@ -281,7 +281,7 @@ export default [
       screen_exclusive: true,
       flooring: "Hard",
       writing_surface: "Whiteboard 4' x 14'",
-      seating_chart: img1,  
+      seating_chart: seating,  
         
 
       instructions:{
@@ -347,7 +347,7 @@ export default [
       system: "Podium",
       windows: "Windows with Blinds/Shades",
       writing_surface: "Whiteboard 4' x 14'",
-      seating_chart: img1,
+      seating_chart: seating,
       projection_surface: "Retractable (motorized) 8' x 9'",
       computers: ["1 PCs",
         "1 Laptop VGA Ports",
@@ -358,7 +358,7 @@ export default [
       screen_exclusive: true,
       flooring: "Hard",
       writing_surface: "Whiteboard 4' x 14'",
-      seating_chart: img1,
+      seating_chart: seating,
         
 
       instructions:{
@@ -424,7 +424,7 @@ export default [
       system: "Podium",
       windows: "Windows with Blinds/Shades",
       writing_surface: "Whiteboard 4' x 14'",
-      seating_chart: img1,
+      seating_chart: seating,
       projection_surface: "Retractable (motorized) 8' x 9'",
       computers: ["1 PCs",
         "1 Laptop VGA Ports",
@@ -435,7 +435,7 @@ export default [
       screen_exclusive: true,
       flooring: "Hard",
       writing_surface: "Whiteboard 4' x 14'",
-      seating_chart: img1,
+      seating_chart: seating,
         
 
       instructions:{
@@ -501,7 +501,7 @@ export default [
       system: "Podium",
       windows: "Windows with Blinds/Shades",
       writing_surface: "Whiteboard 4' x 14'",
-      seating_chart: img1,
+      seating_chart: seating,
       projection_surface: "Retractable (motorized) 8' x 9'",
       computers: ["1 PCs",
         "1 Laptop VGA Ports",
@@ -512,7 +512,7 @@ export default [
       screen_exclusive: true,
       flooring: "Hard",
       writing_surface: "Whiteboard 4' x 14'",
-      seating_chart: img1,
+      seating_chart: seating,
         
 
       instructions:{
@@ -580,7 +580,7 @@ export default [
       system: "Podium",
       windows: "Windows with Blinds/Shades",
       writing_surface: "Whiteboard 4' x 14'",
-      seating_chart: img1,
+      seating_chart: seating,
       projection_surface: "Retractable (motorized) 8' x 9'",
       computers: ["1 PCs",
         "1 Laptop VGA Ports",
@@ -591,7 +591,7 @@ export default [
       screen_exclusive: true,
       flooring: "Hard",
       writing_surface: "Whiteboard 4' x 14'",
-      seating_chart: img1,
+      seating_chart: seating,
 
       instructions:{
         "Room setup":"There are three audio levels that must be taken into consideration when operating room audio.  The computer audio should be at max level.  The software audio should also be adjusted accordingly.  The room audio at the touch-panel can then be adjusted up or down to further calibrate the room audio, this can be done using the “up” and “down” \"hard\" buttons on the right side of the touch-panel.  The \"Advanced Audio Controls\" touch-panel button will allow more specific audio adjustments including the ability to boost the audio output.",
@@ -664,7 +664,7 @@ export default [
       system: "Podium",
       windows: "Windows with Blinds/Shades",
       writing_surface: "Whiteboard 4' x 14'",
-      seating_chart: img1,
+      seating_chart: seating,
       projection_surface: "Retractable (motorized) 8' x 9'",
       computers: ["1 PCs",
         "1 Laptop VGA Ports",
@@ -675,7 +675,7 @@ export default [
       screen_exclusive: true,
       flooring: "Hard",
       writing_surface: "Whiteboard 4' x 14'",
-      seating_chart: img1,
+      seating_chart: seating,
         
 
       instructions:{
@@ -741,7 +741,7 @@ export default [
       system: "Podium",
       windows: "Windows with Blinds/Shades",
       writing_surface: "Whiteboard 4' x 14'",
-      seating_chart: img1,
+      seating_chart: seating,
       projection_surface: "Retractable (motorized) 8' x 9'",
       computers: ["1 PCs",
         "1 Laptop VGA Ports",
@@ -752,7 +752,7 @@ export default [
       screen_exclusive: true,
       flooring: "Hard",
       writing_surface: "Whiteboard 4' x 14'",
-      seating_chart: img1,
+      seating_chart: seating,
         
 
       instructions:{
@@ -818,7 +818,7 @@ export default [
       system: "Podium",
       windows: "Windows with Blinds/Shades",
       writing_surface: "Whiteboard 4' x 14'",
-      seating_chart: img1,
+      seating_chart: seating,
       projection_surface: "Retractable (motorized) 8' x 9'",
       computers: ["1 PCs",
         "1 Laptop VGA Ports",
@@ -829,7 +829,7 @@ export default [
       screen_exclusive: true,
       flooring: "Hard",
       writing_surface: "Whiteboard 4' x 14'",
-      seating_chart: img1,
+      seating_chart: seating,
 
         
 
@@ -896,7 +896,7 @@ export default [
       system: "Podium",
       windows: "Windows with Blinds/Shades",
       writing_surface: "Whiteboard 4' x 14'",
-      seating_chart: img1,
+      seating_chart: seating,
       projection_surface: "Retractable (motorized) 8' x 9'",
       computers: ["1 PCs",
         "1 Laptop VGA Ports",
@@ -907,7 +907,7 @@ export default [
       screen_exclusive: true,
       flooring: "Hard",
       writing_surface: "Whiteboard 4' x 14'",
-      seating_chart: img1,
+      seating_chart: seating,
         
 
       instructions:{
@@ -973,7 +973,7 @@ export default [
       system: "Podium",
       windows: "Windows with Blinds/Shades",
       writing_surface: "Whiteboard 4' x 14'",
-      seating_chart: img1,
+      seating_chart: seating,
       projection_surface: "Retractable (motorized) 8' x 9'",
       computers: ["1 PCs",
         "1 Laptop VGA Ports",
@@ -984,7 +984,7 @@ export default [
       screen_exclusive: true,
       flooring: "Hard",
       writing_surface: "Whiteboard 4' x 14'",
-      seating_chart: img1,
+      seating_chart: seating,
         
 
       instructions:{
