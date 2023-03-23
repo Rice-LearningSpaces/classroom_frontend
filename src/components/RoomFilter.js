@@ -4,18 +4,20 @@ import Title from "./Title";
 function RoomFilter(props) {
   const [state, setState] = useState({
     types: [],
-    guests: [],
+    windows: [],
     extras: [],
     capacity: [],
     sizes: [],
     type: "all",
     system: "all",
     name:"all",
-    seats: 0,
+    students_per_computer: 0,
     capacity: 1,
     systems: [],
-    breakfast: false,
-    pets: false,
+    Chalkboard: false,
+    whiteboard: false,
+    minSpc: 0,
+    maxSpc: 0,
     minSeats: 0,
     maxSeats: 0,
     minSize: 0,
@@ -35,9 +37,13 @@ function RoomFilter(props) {
     //const extras = getRoomData(props.rooms, "extras"); TODO: delete when works
     const systems = getRoomData(props.rooms, "system");
     const name = getRoomData(props.rooms, "name");
-    const guests = getRoomData(props.rooms, "capacity");
+    
+    const windows = getRoomData(props.rooms, "windows");
     const capacity = getRoomData(props.rooms, "capacity");
     const sizes = getRoomData(props.rooms, "size");
+    const students_per_computer = getRoomData(props.rooms, "students_per_computer");
+    const minSpc = students_per_computer.length > 0 ? Math.min(...students_per_computer) : 0;
+    const maxSpc = students_per_computer.length > 0 ? Math.max(...students_per_computer) : 0;
     const minSeats = capacity.length > 0 ? Math.min(...capacity) : 0;
     const maxSeats = capacity.length > 0 ? Math.max(...capacity) : 0;
     const minSize = sizes.length > 0 ? Math.min(...sizes) : 0;
@@ -47,12 +53,13 @@ function RoomFilter(props) {
       ...state,
       types: types,
       systems: systems,
-      guests: guests,
+      windows: windows,
+      minSpc: minSpc,
+      maxSpc: maxSpc,
       minSeats: minSeats,
       maxSeats: maxSeats,
       minSize: minSize,
       maxSize: maxSize,
-      seats: maxSeats
     });
     //eslint-disable-next-line
   }, [props.rooms]);
@@ -129,17 +136,18 @@ function RoomFilter(props) {
         {/* end select type */}
         {/* select capacity */}
         <div className="form-group">
-          <label htmlFor="capacity">Guests</label>
+          <label htmlFor="windows">Window Types</label>
           <select
-            name="capacity"
-            id="capacity"
+            name="windows"
+            id="windows"
             className="form-control"
             onChange={handleChange}
           >
-            {state.guests.sort().map((guest, i) => {
+             <option value="all">All Types</option>
+            {state.windows.map((type, i) => {
               return (
-                <option key={i} value={guest}>
-                  {guest}
+                <option key={i} value={type}>
+                  {type}
                 </option>
               );
             })}
@@ -149,16 +157,16 @@ function RoomFilter(props) {
 
         {/*room price */}
         <div className="form-group">
-          <label htmlFor="seats">Students per computer: {state.seats}</label>
+          <label htmlFor="students_per_computer">Students per computer: {state.students_per_computer}</label>
           {/* todo: change to extras.computer count */}
           <input
             type="range"
-            name="seats"
-            id="seats"
-            min={state.minSeats}
-            max={state.maxSeats}
+            name="students_per_computer"
+            id="students_per_computer"
+            min={state.minSpc}
+            max={state.maxSpc}
             className="form-control"
-            value={state.seats}
+            value={state.students_per_computer}
             onChange={handleChange}
           />
         </div>
@@ -166,7 +174,6 @@ function RoomFilter(props) {
         {/*room size */}
         <div className="form-group">
           <label htmlFor="size">capacity</label> 
-          {/* TODO: change to capacity */}
           <div className="size-inputs">
             <input
               type="number"
@@ -193,22 +200,22 @@ function RoomFilter(props) {
           <div className="single-extra">
             <input
               type="checkbox"
-              name="breakfast"
-              id="breakfast"
-              checked={state.breakfast}
+              name="Chalkboard"
+              id="Chalkboard"
+              checked={state.Chalkboard}
               onChange={handleChange}
             />
-            <label htmlFor="breakfast">breakfast</label>
+            <label htmlFor="Chalkboard">Chalkboard</label>
           </div>
           <div className="single-extra">
             <input
               type="checkbox"
-              name="pets"
-              id="pets"
-              checked={state.pets}
+              name="whiteboard"
+              id="whiteboard"
+              checked={state.whiteboard}
               onChange={handleChange}
             />
-            <label htmlFor="pets">pets</label>
+            <label htmlFor="whiteboard">whiteboard</label>
           </div>
         </div>
         {/* end of extras */}

@@ -31,10 +31,12 @@ function RoomContainer(props) {
     type,
     name,
     system,
-    seats,
+    students_per_computer,
     capacity,
-    breakfast,
-    pets,
+    Chalkboard,
+    whiteboard,
+    minSpc,
+    maxSpc,
     minSeats,
     maxSeats
   }) => {
@@ -61,19 +63,21 @@ function RoomContainer(props) {
     //   console.log(capacity);
     //   sortedRooms = sortedRooms.filter(room => room.capacity >= capacity);
     // }
-    if (seats) {
-      sortedRooms = sortedRooms.filter(room => room.seats <= seats);
+    if (minSpc && maxSpc && students_per_computer) {
+      sortedRooms = sortedRooms.filter(
+        room => room.students_per_computer === students_per_computer
+      );
     }
     if (minSeats && maxSeats) {
       sortedRooms = sortedRooms.filter(
         room => room.capacity >= minSeats && room.capacity <= maxSeats
       );
     }
-    if (pets) {
-      sortedRooms = sortedRooms.filter(room => room.pets === true);
+    if (whiteboard) {
+      sortedRooms = sortedRooms.filter(room => room.whiteboard === true);
     }
-    if (breakfast) {
-      sortedRooms = sortedRooms.filter(room => room.breakfast === true);
+    if (Chalkboard) {
+      sortedRooms = sortedRooms.filter(room => room.Chalkboard === true);
     }
     setState({ ...state, sortedRooms: sortedRooms });
   };

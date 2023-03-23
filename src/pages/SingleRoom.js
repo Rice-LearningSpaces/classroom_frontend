@@ -173,7 +173,6 @@ function SingleRoom(props) {
         </React.Fragment>
       </div>
       <div className="rm-service"> 
-      {/* TODO: change to buttons to request help and request room */}
         <h3>Services</h3>
         <h6>
         <Button onClick={()=>{}} 

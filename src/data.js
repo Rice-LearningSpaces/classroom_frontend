@@ -28,9 +28,10 @@ export default [
       type: "single",
       seats: 100,
       size: 200,
+      
       capacity: 1,
-      pets: false,
-      breakfast: false,
+      whiteboard: false,
+      Chalkboard: false,
       featured: false,
       description:
         "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
@@ -39,10 +40,11 @@ export default [
       "Zoned",
       "Blackout"],
       system: "Podium",
-      windows: "Windows with Blinds/Shades",
+      windows: "another window type",
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
       projection_surface: "Retractable (motorized) 8' x 9'",
+      students_per_computer: 2,
       computers: ["1 PCs",
         "1 Laptop VGA Ports",
         "1 Laptop HDMI Ports"],
@@ -103,9 +105,10 @@ export default [
       type: "single",
       seats: 150,
       size: 250,
+      
       capacity: 1,
-      pets: false,
-      breakfast: false,
+      whiteboard: false,
+      Chalkboard: false,
       featured: false,
       description:
         "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
@@ -118,6 +121,7 @@ export default [
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
       projection_surface: "Retractable (motorized) 8' x 9'",
+      students_per_computer: 15,
       computers: ["1 PCs",
         "1 Laptop VGA Ports",
         "1 Laptop HDMI Ports"],
@@ -180,9 +184,10 @@ export default [
       type: "single",
       seats: 250,
       size: 300,
+      
       capacity: 1,
-      pets: true,
-      breakfast: false,
+      whiteboard: true,
+      Chalkboard: false,
       featured: false,
       description:
         "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
@@ -195,6 +200,7 @@ export default [
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
       projection_surface: "Retractable (motorized) 8' x 9'",
+      students_per_computer: 10,
       computers: ["1 PCs",
         "1 Laptop VGA Ports",
         "1 Laptop HDMI Ports"],
@@ -257,9 +263,10 @@ export default [
       type: "single",
       seats: 300,
       size: 400,
+      
       capacity: 1,
-      pets: true,
-      breakfast: true,
+      whiteboard: true,
+      Chalkboard: true,
       featured: false,
       description:
         "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
@@ -272,6 +279,7 @@ export default [
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
       projection_surface: "Retractable (motorized) 8' x 9'",
+      students_per_computer: 10,
       computers: ["1 PCs",
         "1 Laptop VGA Ports",
         "1 Laptop HDMI Ports"],
@@ -334,9 +342,10 @@ export default [
       type: "double",
       seats: 200,
       size: 300,
+      
       capacity: 2,
-      pets: false,
-      breakfast: false,
+      whiteboard: false,
+      Chalkboard: false,
       featured: false,
       description:
         "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
@@ -349,6 +358,7 @@ export default [
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
       projection_surface: "Retractable (motorized) 8' x 9'",
+      students_per_computer: 10,
       computers: ["1 PCs",
         "1 Laptop VGA Ports",
         "1 Laptop HDMI Ports"],
@@ -411,9 +421,10 @@ export default [
       type: "double",
       seats: 250,
       size: 350,
+      
       capacity: 2,
-      pets: false,
-      breakfast: false,
+      whiteboard: false,
+      Chalkboard: false,
       featured: false,
       description:
         "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
@@ -426,6 +437,7 @@ export default [
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
       projection_surface: "Retractable (motorized) 8' x 9'",
+      students_per_computer: 10,
       computers: ["1 PCs",
         "1 Laptop VGA Ports",
         "1 Laptop HDMI Ports"],
@@ -488,9 +500,10 @@ export default [
       type: "double",
       seats: 300,
       size: 400,
+      
       capacity: 2,
-      pets: true,
-      breakfast: false,
+      whiteboard: true,
+      Chalkboard: false,
       featured: false,
       description:
         "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
@@ -503,6 +516,7 @@ export default [
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
       projection_surface: "Retractable (motorized) 8' x 9'",
+      students_per_computer: 10,
       computers: ["1 PCs",
         "1 Laptop VGA Ports",
         "1 Laptop HDMI Ports"],
@@ -566,11 +580,11 @@ export default [
 
       seats: "59 - Tiered Auditorium", //originally price
       size: 500, //Lighting
+      
       capacity: 2, //Windows
-      pets: true, //Outlets
-      breakfast: true, //Video Conferencing
+      whiteboard: true, //Outlets
+      Chalkboard: true, //Video Conferencing
       featured: true,
-      //TODO: need Accessibility
       description:
         "replace with description of the room or we may not need it", 
       Lighting: ["Fluorescent",
@@ -582,6 +596,7 @@ export default [
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
       projection_surface: "Retractable (motorized) 8' x 9'",
+      students_per_computer: 10,
       computers: ["1 PCs",
         "1 Laptop VGA Ports",
         "1 Laptop HDMI Ports"],
@@ -651,9 +666,10 @@ export default [
       type: "family",
       seats: 300,
       size: 500,
+      
       capacity: 3,
-      pets: false,
-      breakfast: false,
+      whiteboard: false,
+      Chalkboard: false,
       featured: false,
       description:
         "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
@@ -666,6 +682,7 @@ export default [
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
       projection_surface: "Retractable (motorized) 8' x 9'",
+      students_per_computer: 0,
       computers: ["1 PCs",
         "1 Laptop VGA Ports",
         "1 Laptop HDMI Ports"],
@@ -728,9 +745,10 @@ export default [
       type: "family",
       seats: 350,
       size: 550,
+      
       capacity: 4,
-      pets: false,
-      breakfast: false,
+      whiteboard: false,
+      Chalkboard: false,
       featured: false,
       description:
         "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
@@ -743,6 +761,7 @@ export default [
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
       projection_surface: "Retractable (motorized) 8' x 9'",
+      students_per_computer: 10,
       computers: ["1 PCs",
         "1 Laptop VGA Ports",
         "1 Laptop HDMI Ports"],
@@ -805,9 +824,10 @@ export default [
       type: "family",
       seats: 400,
       size: 600,
+      
       capacity: 5,
-      pets: true,
-      breakfast: false,
+      whiteboard: true,
+      Chalkboard: false,
       featured: false,
       description:
         "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
@@ -820,6 +840,7 @@ export default [
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
       projection_surface: "Retractable (motorized) 8' x 9'",
+      students_per_computer: 10,
       computers: ["1 PCs",
         "1 Laptop VGA Ports",
         "1 Laptop HDMI Ports"],
@@ -883,9 +904,10 @@ export default [
       type: "family",
       seats: 500,
       size: 700,
+      
       capacity: 6,
-      pets: true,
-      breakfast: true,
+      whiteboard: true,
+      Chalkboard: true,
       featured: true,
       description:
         "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
@@ -898,6 +920,7 @@ export default [
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
       projection_surface: "Retractable (motorized) 8' x 9'",
+      students_per_computer: 10,
       computers: ["1 PCs",
         "1 Laptop VGA Ports",
         "1 Laptop HDMI Ports"],
@@ -960,9 +983,10 @@ export default [
       type: "presidential",
       seats: 600,
       size: 1000,
+      
       capacity: 10,
-      pets: true,
-      breakfast: true,
+      whiteboard: true,
+      Chalkboard: true,
       featured: true,
       description:
         "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
@@ -975,6 +999,7 @@ export default [
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
       projection_surface: "Retractable (motorized) 8' x 9'",
+      students_per_computer: 10,
       computers: ["1 PCs",
         "1 Laptop VGA Ports",
         "1 Laptop HDMI Ports"],
