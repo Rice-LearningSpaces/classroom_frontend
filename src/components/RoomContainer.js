@@ -31,7 +31,8 @@ function RoomContainer(props) {
     type,
     name,
     system,
-    students_per_computer,
+    selected_students_per_computer,
+    window,
     capacity,
     Chalkboard,
     whiteboard,
@@ -59,14 +60,20 @@ function RoomContainer(props) {
         sortedRooms = sortedRooms.filter(room => room.name === name);
       }
     }
-    // if (capacity) {
-    //   console.log(capacity);
-    //   sortedRooms = sortedRooms.filter(room => room.capacity >= capacity);
-    // }
-    if (minSpc && maxSpc && students_per_computer) {
-      sortedRooms = sortedRooms.filter(
-        room => room.students_per_computer === students_per_computer
-      );
+    if (window) {
+      if (window === "all") {
+        sortedRooms = props.rooms;
+      } else {
+        console.log(window);
+        sortedRooms = sortedRooms.filter(room => room.windows === window);
+      }
+    }
+    if (selected_students_per_computer) {
+      if (selected_students_per_computer === 0) {
+        sortedRooms = props.rooms;
+      } else {
+        sortedRooms = sortedRooms.filter(room => room.students_per_computer == selected_students_per_computer);
+      }
     }
     if (minSeats && maxSeats) {
       sortedRooms = sortedRooms.filter(

@@ -11,7 +11,9 @@ function RoomFilter(props) {
     type: "all",
     system: "all",
     name:"all",
-    students_per_computer: 0,
+    window:"all",
+    students_per_computer: [],
+    selected_students_per_computer:0,
     capacity: 1,
     systems: [],
     Chalkboard: false,
@@ -34,7 +36,7 @@ function RoomFilter(props) {
       return uinque_data;
     };
     const types = getRoomData(props.rooms, "type");
-    //const extras = getRoomData(props.rooms, "extras"); TODO: delete when works
+    
     const systems = getRoomData(props.rooms, "system");
     const name = getRoomData(props.rooms, "name");
     
@@ -42,6 +44,7 @@ function RoomFilter(props) {
     const capacity = getRoomData(props.rooms, "capacity");
     const sizes = getRoomData(props.rooms, "size");
     const students_per_computer = getRoomData(props.rooms, "students_per_computer");
+    // const selected_students_per_computer = 0;
     const minSpc = students_per_computer.length > 0 ? Math.min(...students_per_computer) : 0;
     const maxSpc = students_per_computer.length > 0 ? Math.max(...students_per_computer) : 0;
     const minSeats = capacity.length > 0 ? Math.min(...capacity) : 0;
@@ -52,6 +55,7 @@ function RoomFilter(props) {
     setState({
       ...state,
       types: types,
+      // selected_students_per_computer: selected_students_per_computer,
       systems: systems,
       windows: windows,
       minSpc: minSpc,
@@ -74,6 +78,7 @@ function RoomFilter(props) {
       setState({ ...state, [e.target.name]: e.target.checked });
     } else {
       setState({ ...state, [e.target.name]: e.target.value });
+      console.log("selected_students_per_computer: ",state.selected_students_per_computer);
     }
   };
 
@@ -136,10 +141,10 @@ function RoomFilter(props) {
         {/* end select type */}
         {/* select capacity */}
         <div className="form-group">
-          <label htmlFor="windows">Window Types</label>
+          <label htmlFor="window">Window Types</label>
           <select
-            name="windows"
-            id="windows"
+            name="window"
+            id="window"
             className="form-control"
             onChange={handleChange}
           >
@@ -157,9 +162,17 @@ function RoomFilter(props) {
 
         {/*room price */}
         <div className="form-group">
-          <label htmlFor="students_per_computer">Students per computer: {state.students_per_computer}</label>
+          <label htmlFor="selected_students_per_computer">Students per computer: {state.selected_students_per_computer}</label>
           {/* todo: change to extras.computer count */}
           <input
+              type="number"
+              name="selected_students_per_computer"
+              id="selected_students_per_computer"
+              value={state.selected_students_per_computer}
+              className="size-input"
+              onChange={handleChange}
+            />
+          {/* <input
             type="range"
             name="students_per_computer"
             id="students_per_computer"
@@ -168,7 +181,7 @@ function RoomFilter(props) {
             className="form-control"
             value={state.students_per_computer}
             onChange={handleChange}
-          />
+          /> */}
         </div>
         {/*end of room price */}
         {/*room size */}
