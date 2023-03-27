@@ -10,7 +10,7 @@ import Nabar from "./components/Navbar";
 function App() {
   return (
     <React.Fragment>
-      <Router>
+      <Router basename="/classrooms/">
         <Nabar />
         <Switch>
           <Route exact path="/" component={Home} />
