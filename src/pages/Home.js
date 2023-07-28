@@ -8,7 +8,7 @@ import FeaturedRooms from "../components/FeaturedRooms";
 
 function Home() {
   useEffect(() => {
-    document.title = "Classroom Technology || Home";
+    document.title = "Beach Resort || Home";
   }, []);
 
   return (

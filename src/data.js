@@ -15,9 +15,6 @@ import img11 from "./images/room-11.jpeg";
 import img12 from "./images/room-12.jpeg";
 import ANH_117 from "./images/ANH_117.jpeg";
 import seating from "./images/seating.png";
-import seating_chart1 from "./images/seating_chart1.png";
-import seating_chart2 from "./images/seating_chart2.png";
-import seating_chart3 from "./images/seating_chart3.png";
 
 export default [
   {
@@ -46,20 +43,6 @@ export default [
       windows: "another window type",
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
-      seating_imgs:[
-      {
-        label: 'Tab 1',
-        imageSrc: seating_chart1
-      },
-      {
-        label: 'Tab 2',
-        imageSrc: seating_chart2
-      } ,
-      {
-        label: 'Tab 3',
-        imageSrc: seating_chart3
-      } 
-  ],
       projection_surface: "Retractable (motorized) 8' x 9'",
       students_per_computer: 2,
       computers: ["1 PCs",
@@ -72,20 +55,6 @@ export default [
       flooring: "Hard",
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
-      seating_imgs:[
-      {
-        label: 'Tab 1',
-        imageSrc: 'seating_chart1'
-      },
-      {
-        label: 'Tab 2',
-        imageSrc: seating_chart2
-      } ,
-      {
-        label: 'Tab 3',
-        imageSrc: seating_chart3
-      } 
-  ],
       instructions:{
         "Room setup":"There are three audio levels that must be taken into consideration when operating room audio.  The computer audio should be at max level.  The software audio should also be adjusted accordingly.  The room audio at the touch-panel can then be adjusted up or down to further calibrate the room audio, this can be done using the “up” and “down” \"hard\" buttons on the right side of the touch-panel.  The \"Advanced Audio Controls\" touch-panel button will allow more specific audio adjustments including the ability to boost the audio output.",
         "PC":"TThe PC computer can be selected from the source selection device particular to the system being used.  The PC computer has a 15-minute inactivity sleep timer that will activate when the keyboard or mouse are not moved, however the timer is rendered inactive when viewing a powerpoint file in presentation mode or watching a video (youtube, netflix, etc, or media player) in full screen mode.  When the PC computer is selected you may need to \"wiggle\" the mouse or press any key on the keyboard to wake the computer.",
@@ -151,20 +120,6 @@ export default [
       windows: "Windows with Blinds/Shades",
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
-      seating_imgs:[
-      {
-        label: 'Tab 1',
-        imageSrc: 'seating_chart1'
-      },
-      {
-        label: 'Tab 2',
-        imageSrc: seating_chart2
-      } ,
-      {
-        label: 'Tab 3',
-        imageSrc: seating_chart3
-      } 
-  ],
       projection_surface: "Retractable (motorized) 8' x 9'",
       students_per_computer: 15,
       computers: ["1 PCs",
@@ -177,20 +132,6 @@ export default [
       flooring: "Hard",
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
-      seating_imgs:[
-      {
-        label: 'Tab 1',
-        imageSrc: 'seating_chart1'
-      },
-      {
-        label: 'Tab 2',
-        imageSrc: seating_chart2
-      } ,
-      {
-        label: 'Tab 3',
-        imageSrc: seating_chart3
-      } 
-  ],
         
 
       instructions:{
@@ -258,20 +199,6 @@ export default [
       windows: "Windows with Blinds/Shades",
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
-      seating_imgs:[
-      {
-        label: 'Tab 1',
-        imageSrc: 'seating_chart1'
-      },
-      {
-        label: 'Tab 2',
-        imageSrc: seating_chart2
-      } ,
-      {
-        label: 'Tab 3',
-        imageSrc: seating_chart3
-      } 
-  ],
       projection_surface: "Retractable (motorized) 8' x 9'",
       students_per_computer: 10,
       computers: ["1 PCs",
@@ -284,20 +211,6 @@ export default [
       flooring: "Hard",
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
-      seating_imgs:[
-      {
-        label: 'Tab 1',
-        imageSrc: 'seating_chart1'
-      },
-      {
-        label: 'Tab 2',
-        imageSrc: seating_chart2
-      } ,
-      {
-        label: 'Tab 3',
-        imageSrc: seating_chart3
-      } 
-  ],
         
 
       instructions:{
@@ -365,20 +278,6 @@ export default [
       windows: "Windows with Blinds/Shades",
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
-      seating_imgs:[
-      {
-        label: 'Tab 1',
-        imageSrc: 'seating_chart1'
-      },
-      {
-        label: 'Tab 2',
-        imageSrc: seating_chart2
-      } ,
-      {
-        label: 'Tab 3',
-        imageSrc: seating_chart3
-      } 
-  ],
       projection_surface: "Retractable (motorized) 8' x 9'",
       students_per_computer: 10,
       computers: ["1 PCs",
@@ -390,21 +289,7 @@ export default [
       screen_exclusive: true,
       flooring: "Hard",
       writing_surface: "Whiteboard 4' x 14'",
-      seating_chart: seating,
-      seating_imgs:[
-      {
-        label: 'Tab 1',
-        imageSrc: 'seating_chart1'
-      },
-      {
-        label: 'Tab 2',
-        imageSrc: seating_chart2
-      } ,
-      {
-        label: 'Tab 3',
-        imageSrc: seating_chart3
-      } 
-  ],  
+      seating_chart: seating,  
         
 
       instructions:{
@@ -472,20 +357,6 @@ export default [
       windows: "Windows with Blinds/Shades",
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
-      seating_imgs:[
-      {
-        label: 'Tab 1',
-        imageSrc: 'seating_chart1'
-      },
-      {
-        label: 'Tab 2',
-        imageSrc: seating_chart2
-      } ,
-      {
-        label: 'Tab 3',
-        imageSrc: seating_chart3
-      } 
-  ],
       projection_surface: "Retractable (motorized) 8' x 9'",
       students_per_computer: 10,
       computers: ["1 PCs",
@@ -498,20 +369,6 @@ export default [
       flooring: "Hard",
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
-      seating_imgs:[
-      {
-        label: 'Tab 1',
-        imageSrc: 'seating_chart1'
-      },
-      {
-        label: 'Tab 2',
-        imageSrc: seating_chart2
-      } ,
-      {
-        label: 'Tab 3',
-        imageSrc: seating_chart3
-      } 
-  ],
         
 
       instructions:{
@@ -579,20 +436,6 @@ export default [
       windows: "Windows with Blinds/Shades",
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
-      seating_imgs:[
-      {
-        label: 'Tab 1',
-        imageSrc: 'seating_chart1'
-      },
-      {
-        label: 'Tab 2',
-        imageSrc: seating_chart2
-      } ,
-      {
-        label: 'Tab 3',
-        imageSrc: seating_chart3
-      } 
-  ],
       projection_surface: "Retractable (motorized) 8' x 9'",
       students_per_computer: 10,
       computers: ["1 PCs",
@@ -605,20 +448,6 @@ export default [
       flooring: "Hard",
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
-      seating_imgs:[
-      {
-        label: 'Tab 1',
-        imageSrc: 'seating_chart1'
-      },
-      {
-        label: 'Tab 2',
-        imageSrc: seating_chart2
-      } ,
-      {
-        label: 'Tab 3',
-        imageSrc: seating_chart3
-      } 
-  ],
         
 
       instructions:{
@@ -686,20 +515,6 @@ export default [
       windows: "Windows with Blinds/Shades",
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
-      seating_imgs:[
-      {
-        label: 'Tab 1',
-        imageSrc: 'seating_chart1'
-      },
-      {
-        label: 'Tab 2',
-        imageSrc: seating_chart2
-      } ,
-      {
-        label: 'Tab 3',
-        imageSrc: seating_chart3
-      } 
-  ],
       projection_surface: "Retractable (motorized) 8' x 9'",
       students_per_computer: 10,
       computers: ["1 PCs",
@@ -712,20 +527,6 @@ export default [
       flooring: "Hard",
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
-      seating_imgs:[
-      {
-        label: 'Tab 1',
-        imageSrc: 'seating_chart1'
-      },
-      {
-        label: 'Tab 2',
-        imageSrc: seating_chart2
-      } ,
-      {
-        label: 'Tab 3',
-        imageSrc: seating_chart3
-      } 
-  ],
         
 
       instructions:{
@@ -794,20 +595,6 @@ export default [
       windows: "Windows with Blinds/Shades",
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
-      seating_imgs:[
-      {
-        label: 'Tab 1',
-        imageSrc: 'seating_chart1'
-      },
-      {
-        label: 'Tab 2',
-        imageSrc: seating_chart2
-      } ,
-      {
-        label: 'Tab 3',
-        imageSrc: seating_chart3
-      } 
-  ],
       projection_surface: "Retractable (motorized) 8' x 9'",
       students_per_computer: 10,
       computers: ["1 PCs",
@@ -820,20 +607,6 @@ export default [
       flooring: "Hard",
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
-      seating_imgs:[
-      {
-        label: 'Tab 1',
-        imageSrc: 'seating_chart1'
-      },
-      {
-        label: 'Tab 2',
-        imageSrc: seating_chart2
-      } ,
-      {
-        label: 'Tab 3',
-        imageSrc: seating_chart3
-      } 
-  ],
 
       instructions:{
         "Room setup":"There are three audio levels that must be taken into consideration when operating room audio.  The computer audio should be at max level.  The software audio should also be adjusted accordingly.  The room audio at the touch-panel can then be adjusted up or down to further calibrate the room audio, this can be done using the “up” and “down” \"hard\" buttons on the right side of the touch-panel.  The \"Advanced Audio Controls\" touch-panel button will allow more specific audio adjustments including the ability to boost the audio output.",
@@ -908,20 +681,6 @@ export default [
       windows: "Windows with Blinds/Shades",
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
-      seating_imgs:[
-      {
-        label: 'Tab 1',
-        imageSrc: 'seating_chart1'
-      },
-      {
-        label: 'Tab 2',
-        imageSrc: seating_chart2
-      } ,
-      {
-        label: 'Tab 3',
-        imageSrc: seating_chart3
-      } 
-  ],
       projection_surface: "Retractable (motorized) 8' x 9'",
       students_per_computer: 0,
       computers: ["1 PCs",
@@ -934,20 +693,6 @@ export default [
       flooring: "Hard",
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
-      seating_imgs:[
-      {
-        label: 'Tab 1',
-        imageSrc: 'seating_chart1'
-      },
-      {
-        label: 'Tab 2',
-        imageSrc: seating_chart2
-      } ,
-      {
-        label: 'Tab 3',
-        imageSrc: seating_chart3
-      } 
-  ],
         
 
       instructions:{
@@ -1015,20 +760,6 @@ export default [
       windows: "Windows with Blinds/Shades",
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
-      seating_imgs:[
-      {
-        label: 'Tab 1',
-        imageSrc: 'seating_chart1'
-      },
-      {
-        label: 'Tab 2',
-        imageSrc: seating_chart2
-      } ,
-      {
-        label: 'Tab 3',
-        imageSrc: seating_chart3
-      } 
-  ],
       projection_surface: "Retractable (motorized) 8' x 9'",
       students_per_computer: 10,
       computers: ["1 PCs",
@@ -1041,20 +772,6 @@ export default [
       flooring: "Hard",
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
-      seating_imgs:[
-      {
-        label: 'Tab 1',
-        imageSrc: 'seating_chart1'
-      },
-      {
-        label: 'Tab 2',
-        imageSrc: seating_chart2
-      } ,
-      {
-        label: 'Tab 3',
-        imageSrc: seating_chart3
-      } 
-  ],
         
 
       instructions:{
@@ -1122,20 +839,6 @@ export default [
       windows: "Windows with Blinds/Shades",
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
-      seating_imgs:[
-      {
-        label: 'Tab 1',
-        imageSrc: 'seating_chart1'
-      },
-      {
-        label: 'Tab 2',
-        imageSrc: seating_chart2
-      } ,
-      {
-        label: 'Tab 3',
-        imageSrc: seating_chart3
-      } 
-  ],
       projection_surface: "Retractable (motorized) 8' x 9'",
       students_per_computer: 10,
       computers: ["1 PCs",
@@ -1148,20 +851,6 @@ export default [
       flooring: "Hard",
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
-      seating_imgs:[
-      {
-        label: 'Tab 1',
-        imageSrc: 'seating_chart1'
-      },
-      {
-        label: 'Tab 2',
-        imageSrc: seating_chart2
-      } ,
-      {
-        label: 'Tab 3',
-        imageSrc: seating_chart3
-      } 
-  ],
 
         
 
@@ -1230,20 +919,6 @@ export default [
       windows: "Windows with Blinds/Shades",
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
-      seating_imgs:[
-      {
-        label: 'Tab 1',
-        imageSrc: 'seating_chart1'
-      },
-      {
-        label: 'Tab 2',
-        imageSrc: seating_chart2
-      } ,
-      {
-        label: 'Tab 3',
-        imageSrc: seating_chart3
-      } 
-  ],
       projection_surface: "Retractable (motorized) 8' x 9'",
       students_per_computer: 10,
       computers: ["1 PCs",
@@ -1256,20 +931,6 @@ export default [
       flooring: "Hard",
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
-      seating_imgs:[
-      {
-        label: 'Tab 1',
-        imageSrc: 'seating_chart1'
-      },
-      {
-        label: 'Tab 2',
-        imageSrc: seating_chart2
-      } ,
-      {
-        label: 'Tab 3',
-        imageSrc: seating_chart3
-      } 
-  ],
         
 
       instructions:{
@@ -1337,20 +998,6 @@ export default [
       windows: "Windows with Blinds/Shades",
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
-      seating_imgs:[
-      {
-        label: 'Tab 1',
-        imageSrc: 'seating_chart1'
-      },
-      {
-        label: 'Tab 2',
-        imageSrc: seating_chart2
-      } ,
-      {
-        label: 'Tab 3',
-        imageSrc: seating_chart3
-      } 
-  ],
       projection_surface: "Retractable (motorized) 8' x 9'",
       students_per_computer: 10,
       computers: ["1 PCs",
@@ -1363,20 +1010,6 @@ export default [
       flooring: "Hard",
       writing_surface: "Whiteboard 4' x 14'",
       seating_chart: seating,
-      seating_imgs:[
-      {
-        label: 'Tab 1',
-        imageSrc: 'seating_chart1'
-      },
-      {
-        label: 'Tab 2',
-        imageSrc: seating_chart2
-      } ,
-      {
-        label: 'Tab 3',
-        imageSrc: seating_chart3
-      } 
-  ],
         
 
       instructions:{
