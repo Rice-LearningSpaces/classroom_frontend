@@ -6,36 +6,44 @@ import StyledHero from "../components/StyledHero";
 import { getRooms } from "../data/actions/roomActions";
 
 
-//import { makeStyles } from '@material-ui/core/styles';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import { display } from "@mui/system";
 import BasicTabs from "./Tabs";
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
-// import FlightClassIcon from '@mui/icons-material/FlightClass';
-
-// const useStyles = (pheight)=> makeStyles({
-//   drawer: {
-//     position: "relative",
-//     marginLeft: "auto",
-//     width: 200,
-//     "& .MuiBackdrop-root": {
-//       display: "none"
-//     },
-//     "& .MuiDrawer-paper": {
-//       width: 200,
-//       position: "absolute",
-//         height: pheight,
-//       transition: "none !important"
-//     }
-//   }
-// });
 
 function SingleRoom(props) {
   const [state, setState] = useState({ room: {} });
   const [toggle, setToggle] = useState(false);
+  // Tabs for seating charts
+  const [activeTab, setActiveTab] = useState(0);
+  const [showModal, setShowModal] = useState(false);
   const containerRef = useRef(null);
+
+  //tabs for switching between seating charts 
+  const Tab = ({ active, onClick }) => {
+    return (
+      <div
+        className={`tab ${active ? 'active' : ''}`}
+        onClick={onClick}
+      />
+    );
+  };
+  
+  //display imageSrc in each tab
+  const TabContent = ({ imageSrc }) => {
+    console.log(imageSrc)
+    return (
+      <div className="tab-content">
+        <img src={imageSrc} alt="seating chart" />
+      </div>
+    );
+  };
+
+  const handleTabClick = (index) => {
+    setActiveTab(index);
+  }
 
 
 
@@ -112,7 +120,7 @@ function SingleRoom(props) {
           {room &&
             Object.keys(room).map((key, i) => {
               // don't display id and images on the property list
-              if (key === "id" || key === "images" || key === "seating_chart") {
+              if (key === "id" || key === "images" || key === "seating_chart" || key === "seating_imgs") {
                 return null;
               }
               let value = (room[key]) ?room[key]:"";
@@ -172,6 +180,30 @@ function SingleRoom(props) {
           </Drawer>
         </React.Fragment>
       </div>
+
+
+      <div>
+      <button onClick={() => handleTabClick(0)}>Seating Chart</button>
+      { activeTab === 0 && (
+        <iframe src="/seating_chart" width="100%" height="400px"></iframe>
+      )}
+      { activeTab > 0 && (
+        <div>
+          <ul>
+            { room.seating_imgs.map((tab, index) => (
+              <li key={index} onClick={() => handleTabClick(index)}>
+                { tab.label }
+              </li>
+            ))}
+          </ul>
+          <img src={room.seating_imgs[activeTab - 1].imageSrc} alt={`Tab ${activeTab}`} />
+        </div>
+      )}
+    </div>
+
+
+
+
       <div className="rm-service"> 
         <h3>Services</h3>
         <h6>

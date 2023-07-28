@@ -163,7 +163,6 @@ function RoomFilter(props) {
         {/*room price */}
         <div className="form-group">
           <label htmlFor="selected_students_per_computer">Students per computer: {state.selected_students_per_computer}</label>
-          {/* todo: change to extras.computer count */}
           <input
               type="number"
               name="selected_students_per_computer"
