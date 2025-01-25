@@ -5,7 +5,7 @@
 }
 
 :root {
-  --primaryColor: #af9a7d;
+  --primaryColor: #003366; 
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
@@ -106,24 +106,37 @@ h6 {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0rem 2rem;
-  background: var(--offWhite);
-  z-index: 1;
+background: var(--mainWhite);
+  box-shadow: var(--lightShadow);
+  z-index: 10;
+}
+
+.nav-center {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
 }
 
 .nav-header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  flex-direction: column;
-  display: block;
-  text-decoration: none;
-  padding: 0.5rem 0;
-  color: var(--mainBlack);
-  transition: var(--mainTransition);
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: var(--mainSpacing);
+  width: 100%;
+}
+
+.nav-logo {
+  margin-top: 0.5rem;
+  width: 120px;
+  height: auto;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .nav-btn {
@@ -131,39 +144,53 @@ h6 {
   border: none;
   cursor: pointer;
   outline: none;
-}
-
-.nav-icon {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: var(--primaryColor);
 }
 
-.nav-links {
-  height: 0;
-  overflow: hidden;
+.nav-icon {
+  font-size: 1.5rem;
+  color: var(--mainBlack);
+  cursor: pointer;
   transition: var(--mainTransition);
-  list-style-type: none;
+}
+
+.nav-icon:hover {
+  color: var(--mainBlack);
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
   align-items: center;
+  list-style-type: none;
+  margin: 0;
+}
+
+.nav-links.show-nav {
+  display: flex;
+  background: var(--mainWhite);
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  box-shadow: var(--darkShadow);
+  z-index: 1;
+}
+
+.nav-links li {
+  margin: 0.5rem 0;
 }
 
 .nav-links a {
-  display: block;
-  text-decoration: none;
-  padding: 1rem 0;
   color: var(--mainBlack);
-  transition: var(--mainTransition);
-  text-align: center;
   font-size: 1rem;
-  font-weight: 300;
-  letter-spacing: var(--mainSpacing);
+  text-decoration: none;
+  transition: var(--mainTransition);
 }
 
 .nav-links a:hover {
   color: var(--primaryColor);
-}
-
-.show-nav {
-  height: 100px;
 }
 
 @media screen and (min-width: 768px) {
@@ -171,21 +198,15 @@ h6 {
     display: none;
   }
 
-  .nav-center {
-    max-width: 1170px;
-    margin: 0 auto;
-    display: flex;
-  }
-
   .nav-links {
-    height: auto;
     display: flex;
-    margin-left: 4rem;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: auto;
   }
 
-  .nav-links a {
+  .nav-links li {
     margin: 0 1rem;
-    padding: 0.5rem 0;
   }
 }
 
@@ -194,7 +215,7 @@ h6 {
 .defaultHero,
 .roomsHero {
   min-height: calc(100vh - 66px);
-  background: url("./images/defaultBcg.jpg") center/cover no-repeat;
+  background: url("./images/home-page-bcg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
