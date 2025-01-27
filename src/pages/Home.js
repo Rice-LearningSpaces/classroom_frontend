@@ -1,10 +1,14 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import styled from "styled-components";
 import Hero from "../components/Hero";
-import Banner from "../components/Banner";
 import Services from "../components/Services";
 import FeaturedRooms from "../components/FeaturedRooms";
-// import EarthMoonVR from "../index.vr";
+
+// Styled components
+const HomeContainer = styled.main`
+  display: flex;
+  flex-direction: column;
+`;
 
 function Home() {
   useEffect(() => {
@@ -13,19 +17,13 @@ function Home() {
 
   return (
     <React.Fragment>
-      <Hero>
-        <Banner
-          title="Classroom Search"
-          subtitle="by building"
-        >
-          <Link to="/rooms" className="btn-primary">
-            our rooms
-          </Link>
-        </Banner>
-      </Hero>
-      <Services />
-      <FeaturedRooms />
+      <Hero />
+      <HomeContainer>
+        <Services />
+        <FeaturedRooms />
+      </HomeContainer>
     </React.Fragment>
   );
 }
+
 export default Home;

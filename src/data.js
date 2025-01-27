@@ -22,7 +22,7 @@ export default [
       id: "1"
     },
     fields: {
-      name: "single economy",
+      name: "Single Economy",
       slug: "single-economy",
       building: "building1",
       type: "single",
@@ -99,7 +99,7 @@ export default [
       id: "2"
     },
     fields: {
-      name: "single basic",
+      name: "Single Basic",
       slug: "single-basic",
       building: "building1",
       type: "single",
@@ -178,8 +178,8 @@ export default [
       id: "3"
     },
     fields: {
-      name: "single standard",
-      slug: "single standard",
+      name: "Single Standard",
+      slug: "single-standard",
       building: "building1",
       type: "single",
       seats: 250,
@@ -257,7 +257,7 @@ export default [
       id: "4"
     },
     fields: {
-      name: "single deluxe",
+      name: "Single Deluxe",
       slug: "single-deluxe",
       building: "building1",
       type: "single",
@@ -336,7 +336,7 @@ export default [
       id: "5"
     },
     fields: {
-      name: "double economy",
+      name: "Double Economy",
       slug: "double-economy",
       building: "building1",
       type: "double",
@@ -415,7 +415,7 @@ export default [
       id: "6"
     },
     fields: {
-      name: "double basic",
+      name: "Double Basic",
       slug: "double-basic",
       building: "building1",
       type: "double",
@@ -494,7 +494,7 @@ export default [
       id: "7"
     },
     fields: {
-      name: "double standard",
+      name: "Double Standard",
       slug: "double-standard",
       building: "building1",
       type: "double",
@@ -660,7 +660,7 @@ export default [
       id: "9"
     },
     fields: {
-      name: "family economy",
+      name: "Family Economy",
       slug: "family-economy",
       building: "Anderson-Hall",
       type: "family",
@@ -739,7 +739,7 @@ export default [
       id: "10"
     },
     fields: {
-      name: "family basic",
+      name: "Family Basic",
       slug: "family-basic",
       building: 'Anderson-Hall',
       type: "family",
@@ -818,7 +818,7 @@ export default [
       id: "11"
     },
     fields: {
-      name: "family standard",
+      name: "Family Standard",
       slug: "family-standard",
       building: "Anderson-Hall",
       type: "family",
@@ -898,7 +898,7 @@ export default [
       id: "12"
     },
     fields: {
-      name: "family deluxe",
+      name: "Family Deluxe",
       slug: "family-deluxe",
       building: "Anderson-Hall",
       type: "family",
@@ -977,7 +977,7 @@ export default [
       id: "13"
     },
     fields: {
-      name: "presidential",
+      name: "Presidential",
       slug: "presidential-room",
       building: "Anderson-Hall",
       type: "presidential",

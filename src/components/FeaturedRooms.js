@@ -3,8 +3,34 @@ import { connect } from "react-redux";
 import { getRooms } from "../data/actions/roomActions";
 import Title from "./Title";
 import Room from "./Room";
+import styled from "styled-components";
 
-const FeaturedRooms = props => {
+// Styled components
+const Section = styled.section`
+  padding: 5rem 0;
+  background: var(--mainWhite);
+`;
+
+const FeaturedRoomsCenter = styled.div`
+  width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 40px;
+
+  @media screen and (min-width: 776px) {
+    width: 90vw;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  }
+
+  @media screen and (min-width: 992px) {
+    width: 95vw;
+    max-width: 1170px;
+  }
+`;
+
+const FeaturedRooms = (props) => {
   const [state, setState] = useState({ rooms: [], loading: true });
 
   useEffect(() => {
@@ -13,29 +39,26 @@ const FeaturedRooms = props => {
   }, []);
 
   useEffect(() => {
-    let featured = props.rooms.filter(item => item.featured === true);
+    let featured = props.rooms.filter((item) => item.featured === true);
     setState({ rooms: featured, loading: false });
   }, [props.rooms]);
 
   return (
     <React.Fragment>
-      <section className="featured-rooms">
+      <Section>
         <Title title="featured rooms" />
-        <div className="featured-rooms-center">
+        <FeaturedRoomsCenter>
           {state.rooms.map((room, i) => {
             return <Room key={i} room={room} />;
           })}
-        </div>
-      </section>
+        </FeaturedRoomsCenter>
+      </Section>
     </React.Fragment>
   );
 };
 
-const mapStatesToProps = state => {
+const mapStatesToProps = (state) => {
   return { rooms: state.rooms };
 };
 
-export default connect(
-  mapStatesToProps,
-  { getRooms }
-)(FeaturedRooms);
+export default connect(mapStatesToProps, { getRooms })(FeaturedRooms);
