@@ -5,7 +5,6 @@ import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import RoomContainer from "../components/RoomContainer";
 
-// Styled Components
 const LinkContainer = styled.div`
   a {
     display: inline-block;

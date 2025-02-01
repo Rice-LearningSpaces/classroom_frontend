@@ -8,6 +8,7 @@ import RoomList from "./RoomList";
 // Styled Components
 const Container = styled.div`
   margin-bottom: 2rem;
+  margin-top: 2rem;
 `;
 
 const Title = styled.h1`
